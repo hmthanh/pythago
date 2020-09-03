@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['f',['f',['../class_c_f_x___matrix.html#a2209a8dd1cfa18b157ccab7920764fe5',1,'CFX_Matrix']]],
+  ['face_5findex',['face_index',['../classfoxit_1_1common_1_1_font_map_result.html#a12183fb095546d5637d0bea74ac7de50',1,'foxit::common::FontMapResult']]],
+  ['file_5fname',['file_name',['../classfoxit_1_1pdf_1_1_pay_load_data.html#ad7bdb6632341756d38ac67cd4657d542',1,'foxit::pdf::PayLoadData']]],
+  ['file_5fread',['file_read',['../classfoxit_1_1common_1_1_font_map_result.html#a35dfd65e841a3b2a53a00b934f3460a3',1,'foxit::common::FontMapResult']]],
+  ['file_5fsize',['file_size',['../classfoxit_1_1pdf_1_1_pay_load_data.html#a3b71e55f3e73aa81c2af33262b424a92',1,'foxit::pdf::PayLoadData']]],
+  ['filter',['filter',['../classfoxit_1_1pdf_1_1_page_number_range.html#a9383a9a49b1d635d21e47bee8c4bafa6',1,'foxit::pdf::PageNumberRange::filter()'],['../classfoxit_1_1pdf_1_1_custom_encrypt_data.html#a3ea870f5596aad14e64eb54ace2b47f4',1,'foxit::pdf::CustomEncryptData::filter()']]],
+  ['first',['first',['../classfoxit_1_1pdf_1_1annots_1_1_quad_points.html#a321cf6064ffdc435a65ffa4e0ff0adc8',1,'foxit::pdf::annots::QuadPoints']]],
+  ['first_5fcolor',['first_color',['../classfoxit_1_1pdf_1_1annots_1_1_shading_color.html#a09b9dfddcd7950d09847d2b4d9adefa2',1,'foxit::pdf::annots::ShadingColor']]],
+  ['fit_5fbounds',['fit_bounds',['../classfoxit_1_1pdf_1_1annots_1_1_icon_fit.html#a5a73e457758cdd8d8ea95665f80e9342',1,'foxit::pdf::annots::IconFit']]],
+  ['flag',['flag',['../classfoxit_1_1pdf_1_1_text_page_char_info.html#a2191ffae6df5133bf0dcd8c0c83aea31',1,'foxit::pdf::TextPageCharInfo']]],
+  ['flags',['flags',['../classfoxit_1_1pdf_1_1_default_appearance.html#a5669f2d0d5f5659698bfe7580cc811c1',1,'foxit::pdf::DefaultAppearance::flags()'],['../classfoxit_1_1pdf_1_1_watermark_settings.html#ab06cf8f7314c118e83590196b9eea190',1,'foxit::pdf::WatermarkSettings::flags()']]],
+  ['font',['font',['../classfoxit_1_1pdf_1_1_default_appearance.html#acd339dcaf9b7fbe2b2690e6b4a82d1f4',1,'foxit::pdf::DefaultAppearance::font()'],['../classfoxit_1_1pdf_1_1_header_footer.html#ad703abed3229dcf885c0e9c080af02c7',1,'foxit::pdf::HeaderFooter::font()'],['../classfoxit_1_1pdf_1_1_text_page_char_info.html#abd518d5185c73ec268da094ea8becadc',1,'foxit::pdf::TextPageCharInfo::font()'],['../classfoxit_1_1pdf_1_1_watermark_text_properties.html#afb6fca37080c6533cdd123f042206f92',1,'foxit::pdf::WatermarkTextProperties::font()'],['../classfoxit_1_1pdf_1_1graphics_1_1_text_state.html#ad192f6cef3962ac1c6c0bb2362a0650f',1,'foxit::pdf::graphics::TextState::font()']]],
+  ['font_5fsize',['font_size',['../classfoxit_1_1pdf_1_1_text_page_char_info.html#af188704e9db399e9fa4a54ddb96af002',1,'foxit::pdf::TextPageCharInfo::font_size()'],['../classfoxit_1_1pdf_1_1_watermark_text_properties.html#a8cb3b5ce8ffb94009687cbe65fd1d682',1,'foxit::pdf::WatermarkTextProperties::font_size()'],['../classfoxit_1_1pdf_1_1graphics_1_1_text_state.html#af08c7b349cdb8ecbd551975f2617ddb2',1,'foxit::pdf::graphics::TextState::font_size()']]],
+  ['font_5fstyle',['font_style',['../classfoxit_1_1pdf_1_1_watermark_text_properties.html#abbab4b4d80f362d4ae26a0fb8e818b03',1,'foxit::pdf::WatermarkTextProperties']]],
+  ['footer_5fcenter_5fcontent',['footer_center_content',['../classfoxit_1_1pdf_1_1_header_footer_content.html#a31fedf621ebe1978f382acd2d729ebbb',1,'foxit::pdf::HeaderFooterContent']]],
+  ['footer_5fleft_5fcontent',['footer_left_content',['../classfoxit_1_1pdf_1_1_header_footer_content.html#a482f966f0622124596d50bdea3083cd5',1,'foxit::pdf::HeaderFooterContent']]],
+  ['footer_5fright_5fcontent',['footer_right_content',['../classfoxit_1_1pdf_1_1_header_footer_content.html#a89464c46a43802dcaf81651405d46151',1,'foxit::pdf::HeaderFooterContent']]],
+  ['fourth',['fourth',['../classfoxit_1_1pdf_1_1annots_1_1_quad_points.html#ad91e0697feb36c92df3dd1c18edb428d',1,'foxit::pdf::annots::QuadPoints']]],
+  ['free',['Free',['../struct_f_x_m_e_m___system_mgr.html#a3847dc16d708006020e438ace64a0c04',1,'FXMEM_SystemMgr::Free()'],['../struct_f_x_m_e_m___system_mgr2.html#aefc2acc37b3571cd20f0bfe7ff048e86',1,'FXMEM_SystemMgr2::Free()']]]
+];

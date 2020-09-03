@@ -1,0 +1,887 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+#include "verrsrc.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "#include ""verrsrc.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#include ""PDFReader.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""      // Standard components\r\n"
+    "#include ""afxprint.rc""    // printing/print preview resources\r\n"
+    "#if !defined(_AFXDLL)\r\n"
+    "#include ""afxribbon.rc""        // MFC ribbon and control bar resources\r\n"
+    "#endif\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_LOG_BITMAP          BITMAP                  "sdk.bmp"
+
+IDB_DELETE_BITMAP       BITMAP                  "delete.bmp"
+
+IDB_EXIT_BITMAP         BITMAP                  "exit.bmp"
+
+IDB_OPEN_BITMAP         BITMAP                  "open.bmp"
+
+IDB_DELETE_BITMAP_GRAY  BITMAP                  "delete_gray.bmp"
+
+IDB_EXIT_BITMAP_GRAY    BITMAP                  "exit_gray.bmp"
+
+IDB_OPEN_BITMAP_GRAY    BITMAP                  "open_gray.bmp"
+
+IDB_LOG_BITMAP_GRAY     BITMAP                  "sdk_gray.bmp"
+
+IDB_OUTLINE_BITMAP      BITMAP                  "outline.bmp"
+
+IDB_OUTLINE_SEL_BITMAP  BITMAP                  "outline_sel.bmp"
+
+IDR_ZOOM_TOOLBAR        BITMAP                  "zoombar.bmp"
+
+IDR_GOTO_BAR            BITMAP                  "gotobar.bmp"
+
+IDR_MAINFRAME           BITMAP                  "./Toolbar.bmp"
+
+IDR_OUTLINE_VIEW        BITMAP                  "./tool_hot_bookmark.bmp"
+
+IDR_LAYER_VIEW          BITMAP                  "./tool_hot_layer.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PASSWORD_DIALOG DIALOGEX 0, 0, 216, 40
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION 
+"This file is password protected, please enter a password to open this document."
+FONT 12, "Microsoft YaHei Light", 290, 0, 0x86
+BEGIN
+    DEFPUSHBUTTON   "Apply",ID_PASSWORD_OK,174,14,29,12
+    EDITTEXT        IDC_PASSWORD_EDIT,12,14,156,12,ES_PASSWORD | ES_AUTOHSCROLL
+END
+
+IDD_ANNOT_PROPERTY_DIALOG DIALOGEX 0, 0, 316, 236
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Close",IDC_CLOSEANNOTPROPERTY_BUTTON,241,196,50,14
+    CONTROL         "",IDC_ANNOT_PROPERTY_TAB,"SysTabControl32",0x0,18,14,263,172
+    CONTROL         "Locked",IDC_LOCKANNOT_CHECK,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,196,38,10
+END
+
+IDD_ANNOT_AP_DIALOG DIALOGEX 0, 0, 245, 120
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Color:",IDB_MENU_IMAGES_24,30,16,20,8
+    PUSHBUTTON      "",IDC_COLOR_BUTTON,83,12,28,16
+    LTEXT           "Opacity:",IDC_OPACITY_STATIC,30,50,30,12
+    EDITTEXT        IDC_OPACITY_EDIT,81,46,40,14,ES_AUTOHSCROLL
+    LTEXT           "%",IDC_OPACITYPERCENT_STATIC,128,46,30,12
+    CONTROL         "",IDC_OPACITY_SLIDER,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,73,73,100,15
+    LTEXT           "NoteType:",IDC_NOTETYPE_STATIC,30,99,35,8
+    COMBOBOX        IDC_NOTETYPE_COMBO,78,97,134,43,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_FREETEXT_GENERAL_DIALOG DIALOGEX 0, 0, 316, 127
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Author:",IDC_ANNOT_STATIC,25,29,28,8
+    LTEXT           "Subject:",IDC_STATIC,25,55,28,8
+    EDITTEXT        IDC_AUTHOR_EDIT,81,25,90,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SUBJECT_EDIT,81,49,90,14,ES_AUTOHSCROLL
+    LTEXT           "CreationDate:",IDC_STATIC,25,82,46,8
+    LTEXT           "ModDate:",IDC_STATIC,25,106,32,8
+    LTEXT           "Static",IDC_CREATIONDATE_STATIC,81,82,99,8
+    LTEXT           "Static",IDC_MODDATE_STATIC,81,106,99,8
+END
+
+ID_START_INTERFACE_DIALOG DIALOGEX 0, 0, 202, 289
+STYLE DS_SETFONT | DS_3DLOOK | WS_BORDER | WS_SYSMENU
+EXSTYLE WS_EX_ACCEPTFILES | WS_EX_STATICEDGE
+FONT 10, "Microsoft YaHei UI", 400, 0, 0x86
+BEGIN
+    CONTROL         IDB_LOG_BITMAP,IDC_INTERFACE_BITMAP,"Static",SS_BITMAP | SS_CENTERIMAGE | WS_TABSTOP,0,0,201,127
+    LISTBOX         IDC_INTERFACE_RECENT_LIST,6,154,189,125,LBS_SORT | NOT WS_BORDER | WS_VSCROLL | WS_TABSTOP
+    CONTROL         IDB_OPEN_BITMAP,IDC_INTERFACE_OPEN_FILE,"Static",SS_BITMAP | SS_NOTIFY | WS_TABSTOP,180,130,14,10
+    CONTROL         IDB_DELETE_BITMAP,IDC_INTERFACE_DELETE_RECENT,"Static",SS_BITMAP | SS_NOTIFY | WS_TABSTOP,180,143,14,10
+    EDITTEXT        IDC_INTERFACE_EDIT_FOLDER,6,129,164,12,ES_AUTOHSCROLL | NOT WS_BORDER,WS_EX_CLIENTEDGE
+    LTEXT           "Recent Files",IDC_STATIC,6,144,125,9
+END
+
+IDD_FREETEXT_AP_DIALOG DIALOGEX 0, 0, 316, 169
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Thickness:",IDC_THICKNESS_STATIC,30,16,34,8
+    EDITTEXT        IDC_BORDERWIDTH_EDIT,89,14,59,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_THICKNESS_SPIN,"msctls_updown32",UDS_ARROWKEYS,163,14,11,14
+    LTEXT           "Border Style:",IDC_BORDERSTYPE_STATIC,30,42,43,8
+    LTEXT           "Color:",IDC_STATIC,30,65,20,8
+    PUSHBUTTON      "",IDC_FREETEXTCOLOR_BUTTON,66,57,24,21
+    LTEXT           "Fill Color:",IDC_FREETEXT_FILLCOLOR_STATIC,121,65,30,8
+    PUSHBUTTON      "",IDC_FREETEXTFILLCOLOR_BUTTON,170,57,21,21
+    LTEXT           "Line Style:",IDC_FREETEXT_LINESTYPE_STATIC,30,92,34,8
+    COMBOBOX        IDC_BORDERSTYPE_COMBO,89,39,99,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_FREETEXTLINESTYLE_COMBO,89,89,99,30,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Opacity:",IDC_FREETEXTOPACITY_STATIC,30,120,28,8
+    EDITTEXT        IDC_FREETEXTOPACITY_EDIT,89,116,61,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_FREETEXTOPACITY_SLIDER,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,85,139,100,15
+END
+
+IDD_FINDDLG DIALOGEX 0, 0, 312, 80
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Find"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    PUSHBUTTON      "Find Next",IDC_BUTTON_FIND_NEXT,255,15,50,16
+    PUSHBUTTON      "Cancel",IDC_BUTTON_CANCLE,255,41,50,16
+    LTEXT           "Find What",IDC_STATIC,16,19,36,14
+    EDITTEXT        IDC_EDIT_FINDTEXT,57,15,183,18,ES_AUTOHSCROLL | ES_WANTRETURN
+    CONTROL         "Case-Sensitive",IDC_CHECK_MATCHCASE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,38,63,10
+    CONTROL         "Whole Words Only",IDC_CHECK_MATCHWHOLE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,56,75,10
+    GROUPBOX        "Direction",IDC_STATIC,142,37,96,36
+    CONTROL         "Down",IDC_RADIO_DOWN,"Button",BS_AUTORADIOBUTTON | WS_GROUP,147,54,34,10
+    CONTROL         "Up",IDC_RADIO_UP,"Button",BS_AUTORADIOBUTTON,190,54,25,10
+END
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About PDFReader"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
+    LTEXT           "PDFReader, Version 1.0",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2020",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "OK",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_PROPERTYDLG DIALOGEX 0, 0, 261, 315
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Document Property"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_TAB,"SysTabControl32",0x0,7,7,247,275
+    PUSHBUTTON      "Cancel",IDC_PROPERTY_CANCEL,151,289,66,17
+    PUSHBUTTON      "OK",IDC_PROPERTY_OK,43,289,66,17
+END
+
+IDD_PROPERTYDLG_CREATION DIALOGEX 0, 0, 249, 265
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    GROUPBOX        "Description",IDC_CREATION_DESCRIPTION,15,15,217,137
+    GROUPBOX        "Advanced",IDC_IDC_CREATION_ADVAVCED,15,166,218,87
+    LTEXT           "Files:",IDC_IDC_CREATION__FILES,47,29,16,11
+    LTEXT           "Title:",IDC_CREATION_TITLE,47,44,16,11
+    LTEXT           "Subject:",IDC_CREATION_SUBJECT,37,59,26,11
+    LTEXT           "Author:",IDC_CREATION_AUTHOR,39,74,24,11
+    LTEXT           "Keywords:",IDC_CREATION_KEYWORDS,29,89,34,11
+    LTEXT           "Creator:",IDC_CREATION_CREATOR,36,104,27,11
+    LTEXT           "Created:",IDC_CREATION_CREATED,35,119,28,11
+    LTEXT           "Modified:",IDC_CREATION_MODIFIED,34,134,29,11
+    EDITTEXT        IDC_CREATION_EDIT_FILES,68,26,156,12,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_NOHIDESEL | ES_READONLY | NOT WS_TABSTOP,WS_EX_LEFTSCROLLBAR
+    EDITTEXT        IDC_CREATION_EDIT_SUBJECT,68,56,156,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_CREATION_EDIT_TITLE,68,41,156,12,ES_AUTOHSCROLL | ES_READONLY,WS_EX_LEFTSCROLLBAR
+    EDITTEXT        IDC_CREATION_EDIT_AUTHOR,68,71,156,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_CREATION_EDIT_KEYWORDS,68,86,156,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "",IDC_CREATION_STATIC_CREATOR,68,103,156,12
+    LTEXT           "",IDC_CREATION_STATIC_CREATED,68,118,156,12
+    LTEXT           "",IDC_CREATION_STATIC_MODIFIED,68,133,156,12
+    LTEXT           "Producer:",IDC_CREATION_PRODUCER,32,181,31,8
+    LTEXT           "File size:",IDC_CREATION_FILE_SIZE,36,198,27,11
+    LTEXT           "Page size:",IDC_CREATION_PAGE_SIZE,29,218,34,9
+    LTEXT           "Total pages:",IDC_CREATION_TOTAL_PAGES,23,236,40,9
+    LTEXT           "",IDC_CREATION_STATIC_PRODUCER,68,180,156,9
+    LTEXT           "",IDC_CREATION_STATIC_FILE_SIZE,68,199,156,8
+    LTEXT           "",IDC_CREATION_STATIC_PAGE_SIZE,68,219,156,8
+    LTEXT           "",IDC_CREATION_STATIC_TOTAL_PAGES,68,237,156,8
+END
+
+IDD_PROPERTYDLG_SECURITY DIALOGEX 0, 0, 248, 266
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    GROUPBOX        "Document Security",IDC_SECURITY_DOC_SEC,12,6,222,42
+    GROUPBOX        "Restrictions Summary",IDC_SECURITY_RES_SUM,12,58,222,180
+    RTEXT           "Security Method:",IDC_SECURITY_SEC_METHOD,36,76,60,8
+    RTEXT           "User Password:",IDC_SECURITY_USER_PWD,42,92,54,8
+    RTEXT           "Owner Password:",IDC_SECURITY_OWN_PWD,36,108,60,8
+    RTEXT           "Print:",IDC_SECURITY_PRINT,78,125,18,8
+    RTEXT           "Modify Document:",IDC_SECURITY_MOD_DOC,36,139,60,8
+    RTEXT           "Fill in Forms:",IDC_SECURITY_FILL_IN_FOR,54,156,42,8
+    RTEXT           "Content Extracion:",IDC_SECURITY_CON_EXT,30,172,66,8
+    RTEXT           "Document Assembly:",IDC_SECURITY_DOC_ASS,24,189,72,8
+    LTEXT           "",IDC_SECURITY_STATIC_SEC_METHOD,102,76,78,12
+    LTEXT           "",IDC_SECURITY_STATIC_USER_PWD,102,92,78,12
+    LTEXT           "",IDC_SECURITY_STATIC_OWN_PWD,102,108,78,12
+    LTEXT           "",IDC_SECURITY_STATIC_PRINT,102,125,78,12
+    LTEXT           "",IDC_SECURITY_STATIC_MOD_DOC,102,139,78,12
+    LTEXT           "",IDC_SECURITY_STATIC_FILL_IN_FOR,102,156,78,12
+    LTEXT           "",IDC_SECURITY_STATIC_CON_EXT,102,172,78,12
+    LTEXT           "",IDC_SECURITY_STATIC_DOC_ASS,102,189,78,12
+    LTEXT           "Security Method:",IDC_PROPERTYDLG_SEC_METHOD,24,25,66,12
+    COMBOBOX        IDC_PROPERTYDLG_SEC_EDIT,90,24,128,12,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_PROPERTYDLG_INITIAL_VIEW DIALOGEX 0, 0, 247, 265
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    GROUPBOX        "Viewer Preference",IDC_INI_VIEW_VIEP,12,6,222,197
+    LTEXT           "",IDC_INI_VIEW_STATIC_PAGE_MODE,118,130,42,8
+    LTEXT           "",IDC_INI_VIEW_STATIC_DIRECTION,118,151,42,8
+    LTEXT           "",IDC_INI_VIEW_STATIC_PRINT_SCALE,118,169,42,8
+    LTEXT           "",IDC_INI_VIEW_STATIC_PRINT_COPIES,118,186,42,8
+    RTEXT           "Center Window:",IDC_INI_VIEW_CENTER_WIN,54,56,54,8
+    RTEXT           "Reading Direction:",IDC_INI_VIEW_DIRECTION,48,151,60,12
+    RTEXT           "Non Full Screen Page Mode:",IDC_INI_VIEW_NOTFULLMODE,14,130,94,16
+    RTEXT           "Print Scale:",IDC_INI_VIEW_PRINT_SCALE,69,169,39,12
+    RTEXT           "Hide ToolBar:",IDC_INI_VIEW_HIDETOOLBAR,64,20,44,8
+    LTEXT           "Fit Window:",IDC_INI_VIEW_FITWIN,69,39,39,8
+    RTEXT           "Hide Menubar:",IDC_INI_VIEW_HIDE_MENNU_BAR,54,74,54,8
+    RTEXT           "Hide WindowUI:",IDC_INI_VIEW_HIDE_WIN_UI,57,92,51,8
+    RTEXT           "Display Document Title:",IDC_INI_VIEW_DOC_TITLE,22,110,86,9
+    RTEXT           "Print Copies:",IDC_INI_VIEW_PRINT_COPIES,53,186,55,15
+    LTEXT           "",IDC_STATIC_HIDETOOLBAR,118,20,42,8
+    LTEXT           "",IDC_STATIC_FITWIDTH,118,39,42,8
+    LTEXT           "",IDC_STATIC_CEN_WIN,118,56,42,8
+    LTEXT           "",IDC_STATIC_HIDEMEN,118,74,42,8
+    LTEXT           "",IDC_STATIC_HIDEWIN_UI,118,92,42,8
+    LTEXT           "",IDC_STATIC_DOC_TITLE,118,110,42,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_PASSWORD_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 209
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 33
+    END
+
+    IDD_ANNOT_PROPERTY_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 229
+    END
+
+    IDD_ANNOT_AP_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 238
+        TOPMARGIN, 7
+    END
+
+    IDD_FREETEXT_GENERAL_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+    END
+
+    ID_START_INTERFACE_DIALOG, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 286
+    END
+
+    IDD_FINDDLG, DIALOG
+    BEGIN
+    END
+
+    IDD_PROPERTYDLG, DIALOG
+    BEGIN
+    END
+
+    IDD_PROPERTYDLG_CREATION, DIALOG
+    BEGIN
+        RIGHTMARGIN, 248
+    END
+
+    IDD_PROPERTYDLG_SECURITY, DIALOG
+    BEGIN
+    END
+
+    IDD_PROPERTYDLG_INITIAL_VIEW, DIALOG
+    BEGIN
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+ID_FIRST_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_PASSWORD_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+ID_START_INTERFACE_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_PROPERTYDLG_SECURITY AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_FINDDLG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_PROPERTYDLG_CREATION AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_PROPERTYDLG_INITIAL_VIEW AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CUR_CROSS           CURSOR                  "cursor\\snapshot.cur"
+
+IDC_CUR_CATCH           CURSOR                  "cursor\\catch.cur"
+
+IDC_CUR_HAND            CURSOR                  "cursor\\hand.cur"
+
+IDC_CUR_SELECTANNOT     CURSOR                  "cursor\\Select.cur"
+
+IDC_CUR_POINT           CURSOR                  "cursor\\point.cur"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_ZOOM_TOOLBAR TOOLBAR 24, 24
+BEGIN
+    BUTTON      ID_PDF_ZOOM_OUT
+    BUTTON      ID_SLIDER_BUTTON
+    BUTTON      ID_PDF_ZOOM_IN
+END
+
+IDR_GOTO_BAR TOOLBAR 24, 24
+BEGIN
+    BUTTON      ID_FIRST_PAGE
+    BUTTON      ID_PREV_PAGE
+    BUTTON      ID_CURRENT_PAGE
+    BUTTON      ID_NEXT_PAGE
+    BUTTON      ID_LAST_PAGE
+END
+
+IDR_MAINFRAME TOOLBAR 24, 24
+BEGIN
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_PDF_HANDLE
+    BUTTON      ID_PDF_SEARCH
+    BUTTON      ID_PDF_SELECT
+    SEPARATOR
+    BUTTON      ID_PDF_PSI
+    SEPARATOR
+    BUTTON      ID_PDF_ROTATE_CW
+    BUTTON      ID_PDF_ROTATE_ACW
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_ANNOT_AP_DIALOG DLGINIT
+BEGIN
+    IDC_NOTETYPE_COMBO, 0x403, 6, 0
+0x6843, 0x6365, 0x006b, 
+    IDC_NOTETYPE_COMBO, 0x403, 7, 0
+0x6943, 0x6372, 0x656c, "\000" 
+    IDC_NOTETYPE_COMBO, 0x403, 8, 0
+0x6f43, 0x6d6d, 0x6e65, 0x0074, 
+    IDC_NOTETYPE_COMBO, 0x403, 6, 0
+0x7243, 0x736f, 0x0073, 
+    IDC_NOTETYPE_COMBO, 0x403, 5, 0
+0x6548, 0x706c, "\000" 
+    IDC_NOTETYPE_COMBO, 0x403, 7, 0
+0x6e49, 0x6573, 0x7472, "\000" 
+    IDC_NOTETYPE_COMBO, 0x403, 4, 0
+0x654b, 0x0079, 
+    IDC_NOTETYPE_COMBO, 0x403, 13, 0
+0x654e, 0x5077, 0x7261, 0x6761, 0x6172, 0x6870, "\000" 
+    IDC_NOTETYPE_COMBO, 0x403, 5, 0
+0x6f4e, 0x6574, "\000" 
+    IDC_NOTETYPE_COMBO, 0x403, 10, 0
+0x6150, 0x6172, 0x7267, 0x7061, 0x0068, 
+    IDC_NOTETYPE_COMBO, 0x403, 11, 0
+0x6952, 0x6867, 0x4174, 0x7272, 0x776f, "\000" 
+    IDC_NOTETYPE_COMBO, 0x403, 13, 0
+0x6952, 0x6867, 0x5074, 0x696f, 0x746e, 0x7265, "\000" 
+    IDC_NOTETYPE_COMBO, 0x403, 5, 0
+0x7453, 0x7261, "\000" 
+    IDC_NOTETYPE_COMBO, 0x403, 8, 0
+0x7055, 0x7241, 0x6f72, 0x0077, 
+    IDC_NOTETYPE_COMBO, 0x403, 12, 0
+0x7055, 0x656c, 0x7466, 0x7241, 0x6f72, 0x0077, 
+    0
+END
+
+IDD_FREETEXT_AP_DIALOG DLGINIT
+BEGIN
+    IDC_BORDERSTYPE_COMBO, 0x403, 6, 0
+0x6f53, 0x696c, 0x0064, 
+    IDC_BORDERSTYPE_COMBO, 0x403, 7, 0
+0x6144, 0x6873, 0x6465, "\000" 
+    IDC_BORDERSTYPE_COMBO, 0x403, 10, 0
+0x6e55, 0x6564, 0x6c72, 0x6e69, 0x0065, 
+    IDC_BORDERSTYPE_COMBO, 0x403, 8, 0
+0x6542, 0x6576, 0x656c, 0x0064, 
+    IDC_BORDERSTYPE_COMBO, 0x403, 7, 0
+0x6e49, 0x6573, 0x7472, "\000" 
+    IDC_BORDERSTYPE_COMBO, 0x403, 7, 0
+0x6c43, 0x756f, 0x7964, "\000" 
+    IDC_FREETEXTLINESTYLE_COMBO, 0x403, 5, 0
+0x6f4e, 0x656e, "\000" 
+    IDC_FREETEXTLINESTYLE_COMBO, 0x403, 7, 0
+0x7153, 0x6175, 0x6572, "\000" 
+    IDC_FREETEXTLINESTYLE_COMBO, 0x403, 7, 0
+0x6943, 0x6372, 0x656c, "\000" 
+    IDC_FREETEXTLINESTYLE_COMBO, 0x403, 8, 0
+0x6944, 0x6d61, 0x6e6f, 0x0064, 
+    IDC_FREETEXTLINESTYLE_COMBO, 0x403, 10, 0
+0x704f, 0x6e65, 0x7241, 0x6f72, 0x0077, 
+    IDC_FREETEXTLINESTYLE_COMBO, 0x403, 12, 0
+0x6c43, 0x736f, 0x6465, 0x7241, 0x6f72, 0x0077, 
+    IDC_FREETEXTLINESTYLE_COMBO, 0x403, 5, 0
+0x7542, 0x7474, "\000" 
+    IDC_FREETEXTLINESTYLE_COMBO, 0x403, 11, 0
+0x4f52, 0x6570, 0x416e, 0x7272, 0x776f, "\000" 
+    IDC_FREETEXTLINESTYLE_COMBO, 0x403, 13, 0
+0x4352, 0x6f6c, 0x6573, 0x4164, 0x7272, 0x776f, "\000" 
+    IDC_FREETEXTLINESTYLE_COMBO, 0x403, 6, 0
+0x6c53, 0x7361, 0x0068, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Zoom Bar",                   ID_VIEW_ZOOMBAR
+        MENUITEM "&Goto Bar",                   ID_VIEW_GOTOBAR
+        MENUITEM "&Tool Bar",                   ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "&Outline",                    ID_VIEW_OUTLINEVIEW
+    END
+    POPUP "&Document"
+    BEGIN
+        MENUITEM "&Property",                   ID_DOCUMENT_PROPERTY
+    END
+    POPUP "Tool"
+    BEGIN
+        MENUITEM "Annot Selection",             ID_TOOL_ANNOTSELECT
+    END
+    POPUP "Annot"
+    BEGIN
+        MENUITEM "Free Text",                   ID_ANNOT_FREETEXT
+        MENUITEM "Highlight",                   ID_ANNOT_HIGHLIGHT
+        MENUITEM "Underline",                   ID_ANNOT_UNDERLINE
+        MENUITEM "Note",                        ID_ANNOT_NOTES
+        MENUITEM "Link",                        ID_ANNOT_LINK
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About PDFReader...",         ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "./PDFReader.ico"
+
+IDR_PDFReaderTYPE       ICON                    "./PDFReaderDoc.ico"
+
+IDI_OUTLINE_VIEW        ICON                    "./tool_hot_bookmark.ico"
+
+IDI_LAYER_VIEW          ICON                    "./tool_hot_layer.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    "F",            ID_PDF_SEARCH,          VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "PDFReader"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "PDFReader.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "PDFReader.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE initialization failed.  Make sure that the OLE libraries are the correct version."
+    IDP_SOCKETS_INIT_FAILED "Windows sockets initialization failed."
+END
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "PDFReader\n\nPDFReader\nPDFReader Files (*.pdf)\n.pdf\nPDFReader.Document\nPDFReader.Document"
+    ID_VIEW_OUTLINEVIEW     "Show or hide the Outline(Bookmark) View\nToggle Outline(Bookmark) Bar"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "PDFReader"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_DIRECT    "Print the active document using current options\nQuick Print"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+    ID_FILE_NEW_FRAME       "Create a new frame\nNew Frame"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_CLOSE               "Close"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "A PDF reader demo, support by Foxit PDF SDK"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the Tool bar\nToggle Tool Bar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle Status Bar"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_OUTLINE_VIEW        "Outline"
+    IDS_LAYER_VIEW          "Layer"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_GOTOBAR         "Show or hide the Goto bar\nToggle Goto Bar"
+    ID_DOCUMENT_PROPERTY    "Show the property of active document"
+    ID_FIRST_PAGE           "Go to first page"
+    ID_PREV_PAGE            "Go to previous page"
+    ID_CURRENT_PAGE         "Current page index and labels information"
+    ID_NEXT_PAGE            "Go to next page"
+    ID_LAST_PAGE            "Go to last page"
+    ID_VIEW_ZOOMBAR         "Show or hide the Zoom bar\nToggle Zoom Bar"
+END
+
+STRINGTABLE
+BEGIN
+    ID_ANNOT_FREETEXT       "Add FreeText annotation"
+    ID_ANNOT_HIGHLIGHT      "Add Highlight annotation"
+    ID_ANNOT_UNDERLINE      "Add Underline annotation"
+    ID_ANNOT_NOTES          "Add Note(Text) annotation"
+    ID_ANNOT_LINK           "Add Link annotation"
+    ID_TOOL_ANNOTSELECT     "Selet annotations"
+END
+
+STRINGTABLE
+BEGIN
+    ID_PDF_SELECT           "Select"
+    ID_PDF_PSI              "PSI"
+    ID_PDF_ZOOM_OUT         "Zoom out"
+    ID_PDF_ZOOM_IN          "Zoom in"
+    ID_PDF_ROTATE_CW        "Rotate 90?clockwise"
+    ID_PDF_ROTATE_ACW       "Rotate 90?anti-clockwise"
+END
+
+STRINGTABLE
+BEGIN
+    ID_PDF_HANDLE           "Hand"
+    ID_PDF_SEARCH           "Search"
+END
+
+#endif    // English resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#include "PDFReader.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"      // Standard components
+#include "afxprint.rc"    // printing/print preview resources
+#if !defined(_AFXDLL)
+#include "afxribbon.rc"        // MFC ribbon and control bar resources
+#endif
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

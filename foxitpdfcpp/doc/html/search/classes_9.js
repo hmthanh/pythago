@@ -1,0 +1,23 @@
+var searchData=
+[
+  ['iconfit',['IconFit',['../classfoxit_1_1pdf_1_1annots_1_1_icon_fit.html',1,'foxit::pdf::annots']]],
+  ['iconprovidercallback',['IconProviderCallback',['../classfoxit_1_1pdf_1_1annots_1_1_icon_provider_callback.html',1,'foxit::pdf::annots']]],
+  ['identityproperties',['IdentityProperties',['../classfoxit_1_1_identity_properties.html',1,'foxit']]],
+  ['ifx_5fallocator',['IFX_Allocator',['../struct_i_f_x___allocator.html',1,'']]],
+  ['ifx_5fbufferarchive',['IFX_BufferArchive',['../class_i_f_x___buffer_archive.html',1,'']]],
+  ['ifx_5fbufferread',['IFX_BufferRead',['../class_i_f_x___buffer_read.html',1,'']]],
+  ['ifx_5ffileaccess',['IFX_FileAccess',['../class_i_f_x___file_access.html',1,'']]],
+  ['ifx_5ffileread',['IFX_FileRead',['../class_i_f_x___file_read.html',1,'']]],
+  ['ifx_5ffilestream',['IFX_FileStream',['../class_i_f_x___file_stream.html',1,'']]],
+  ['ifx_5ffilewrite',['IFX_FileWrite',['../class_i_f_x___file_write.html',1,'']]],
+  ['ifx_5fmemorystream',['IFX_MemoryStream',['../class_i_f_x___memory_stream.html',1,'']]],
+  ['ifx_5fpause',['IFX_Pause',['../class_i_f_x___pause.html',1,'']]],
+  ['ifx_5fstreamread',['IFX_StreamRead',['../class_i_f_x___stream_read.html',1,'']]],
+  ['ifx_5fstreamwrite',['IFX_StreamWrite',['../class_i_f_x___stream_write.html',1,'']]],
+  ['ifx_5funknown',['IFX_Unknown',['../class_i_f_x___unknown.html',1,'']]],
+  ['image',['Image',['../classfoxit_1_1common_1_1_image.html',1,'foxit::common']]],
+  ['imageobject',['ImageObject',['../classfoxit_1_1pdf_1_1graphics_1_1_image_object.html',1,'foxit::pdf::graphics']]],
+  ['imagesettings',['ImageSettings',['../classfoxit_1_1addon_1_1optimization_1_1_image_settings.html',1,'foxit::addon::optimization']]],
+  ['importdataaction',['ImportDataAction',['../classfoxit_1_1pdf_1_1actions_1_1_import_data_action.html',1,'foxit::pdf::actions']]],
+  ['ink',['Ink',['../classfoxit_1_1pdf_1_1annots_1_1_ink.html',1,'foxit::pdf::annots']]]
+];

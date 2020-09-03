@@ -1,0 +1,24 @@
+var searchData=
+[
+  ['c',['c',['../class_c_f_x___matrix.html#aa057b858f7f6c4b346c40a115e78bf2c',1,'CFX_Matrix']]],
+  ['cert',['cert',['../classfoxit_1_1pdf_1_1_cert_verify_result.html#af44d8a7e451f3de36dc83100bf8afd9b',1,'foxit::pdf::CertVerifyResult::cert()'],['../classfoxit_1_1pdf_1_1_cert_issuer_pair.html#af82e8df0f73ae0945554320432c57822',1,'foxit::pdf::CertIssuerPair::cert()']]],
+  ['cert_5fcheck_5ftime',['cert_check_time',['../classfoxit_1_1pdf_1_1_cert_verify_result.html#a5bd86a26b02f024ce0e818e30ded21dc',1,'foxit::pdf::CertVerifyResult']]],
+  ['cert_5fstatus',['cert_status',['../classfoxit_1_1pdf_1_1_cert_verify_result.html#a870d940c365d8a75be74c7ebd7f9810e',1,'foxit::pdf::CertVerifyResult']]],
+  ['char_5fbox',['char_box',['../classfoxit_1_1pdf_1_1_text_page_char_info.html#aa6d1e440ae289dce56f363038c7439cb',1,'foxit::pdf::TextPageCharInfo']]],
+  ['char_5foutbox',['char_outbox',['../classfoxit_1_1pdf_1_1_text_page_char_info.html#a954b43c4fe8f0b7c93ed621031603034',1,'foxit::pdf::TextPageCharInfo']]],
+  ['charspace',['charspace',['../classfoxit_1_1pdf_1_1graphics_1_1_text_state.html#a578a6313d6d4deac4ad56a14b5155b55',1,'foxit::pdf::graphics::TextState']]],
+  ['cipher',['cipher',['../classfoxit_1_1pdf_1_1_std_encrypt_data.html#a3d72bb48dc00e26560d67e59722aa182',1,'foxit::pdf::StdEncryptData::cipher()'],['../classfoxit_1_1pdf_1_1_certificate_encrypt_data.html#a41ff8ffe1d2d94c194bf1ea012229842',1,'foxit::pdf::CertificateEncryptData::cipher()'],['../classfoxit_1_1pdf_1_1_d_r_m_encrypt_data.html#a9831174a0f02bbc7a051df1c83d25068',1,'foxit::pdf::DRMEncryptData::cipher()']]],
+  ['cloud_5fintensity',['cloud_intensity',['../classfoxit_1_1pdf_1_1annots_1_1_border_info.html#a0cc2b667fcb7751a09791261a5a7f7d4',1,'foxit::pdf::annots::BorderInfo']]],
+  ['collectall',['CollectAll',['../struct_f_x_m_e_m___system_mgr.html#a152c6327d32e9bf5ec2ad5eab16d8c38',1,'FXMEM_SystemMgr']]],
+  ['color',['color',['../classfoxit_1_1pdf_1_1_watermark_text_properties.html#aa2deff0b30a24f5aeec764cbd3154fca',1,'foxit::pdf::WatermarkTextProperties']]],
+  ['comment',['comment',['../classfoxit_1_1addon_1_1compliance_1_1_fixup_data.html#a2920ca62062e872adfe3e917754b152d',1,'foxit::addon::compliance::FixupData::comment()'],['../classfoxit_1_1addon_1_1compliance_1_1_hit_data.html#a7903172ec06f3e732b8d6f92685dcd40',1,'foxit::addon::compliance::HitData::comment()']]],
+  ['compared_5fdoc_5fresults',['compared_doc_results',['../classfoxit_1_1addon_1_1comparison_1_1_compare_results.html#a21519f87a66541e6ec22d0a1c07b7677',1,'foxit::addon::comparison::CompareResults']]],
+  ['content',['content',['../classfoxit_1_1pdf_1_1_header_footer.html#a1934af4be28060a38832fdf9f5f7f635',1,'foxit::pdf::HeaderFooter']]],
+  ['content_5foption',['content_option',['../classfoxit_1_1addon_1_1conversion_1_1_word2_p_d_f_setting_data.html#a8b1ebec7b907a482ed9acbf3bb672f08',1,'foxit::addon::conversion::Word2PDFSettingData']]],
+  ['convert_5fto_5fpdfa',['convert_to_pdfa',['../classfoxit_1_1addon_1_1conversion_1_1_word2_p_d_f_setting_data.html#a3989f714760aa71560eb5d8486b31ba0',1,'foxit::addon::conversion::Word2PDFSettingData::convert_to_pdfa()'],['../classfoxit_1_1addon_1_1conversion_1_1_excel2_p_d_f_setting_data.html#aaa6c090dce8560255c7d09e8879cb2be',1,'foxit::addon::conversion::Excel2PDFSettingData::convert_to_pdfa()']]],
+  ['corporation',['corporation',['../classfoxit_1_1_identity_properties.html#a0108369997ab8e1b7fd9dac7115f830a',1,'foxit::IdentityProperties']]],
+  ['count',['count',['../struct_c_f_x___sort_list_array_1_1_data_list.html#a654b8dc03397ac5767ca0edba6bf9b70',1,'CFX_SortListArray::DataList']]],
+  ['createthread',['CreateThread',['../struct_f_x___t_h_r_e_a_d_h_a_n_d_l_e_r.html#a88b7181b0371ec2d999caa4b848c1fb5',1,'FX_THREADHANDLER']]],
+  ['crl_5farray',['crl_array',['../classfoxit_1_1pdf_1_1_revocation_array_info.html#af06f75f6c8211224fa7d0e8f29b06d5f',1,'foxit::pdf::RevocationArrayInfo']]],
+  ['crypto_5ffilter',['crypto_filter',['../classfoxit_1_1pdf_1_1_pay_load_data.html#a717f009121c9f706e8f9b65d04b0fbcd',1,'foxit::pdf::PayLoadData']]]
+];

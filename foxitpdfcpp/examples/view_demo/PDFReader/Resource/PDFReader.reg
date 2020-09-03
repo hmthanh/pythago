@@ -1,0 +1,22 @@
+REGEDIT
+; This .REG file may be used by your SETUP program.
+;   If a SETUP program is not available, the entries below will be
+;   registered in your InitInstance automatically with a call to
+;   CWinApp::RegisterShellFileTypes and COleObjectFactory::UpdateRegistryAll.
+
+HKEY_CLASSES_ROOT\.pdf = PDFReader.Document
+HKEY_CLASSES_ROOT\PDFReader.Document\shell\open\command = PDFReader.EXE %1
+HKEY_CLASSES_ROOT\PDFReader.Document\shell\open\ddeexec = [open("%1")]
+HKEY_CLASSES_ROOT\PDFReader.Document\shell\open\ddeexec\application = PDFReader
+    ; note: the application is optional
+    ;  (it defaults to the app name in "command")
+
+HKEY_CLASSES_ROOT\PDFReader.Document = PDFReader.Document
+
+
+HKEY_CLASSES_ROOT\PDFReader.Document\CLSID = {081980BE-38AC-47F5-9B79-4CBFFC4FF97C}
+
+HKEY_CLASSES_ROOT\CLSID\{081980BE-38AC-47F5-9B79-4CBFFC4FF97C} = PDFReader.Document
+HKEY_CLASSES_ROOT\CLSID\{081980BE-38AC-47F5-9B79-4CBFFC4FF97C}\ProgId = PDFReader.Document
+
+HKEY_CLASSES_ROOT\CLSID\{081980BE-38AC-47F5-9B79-4CBFFC4FF97C}\LocalServer32 = PDFReader.EXE

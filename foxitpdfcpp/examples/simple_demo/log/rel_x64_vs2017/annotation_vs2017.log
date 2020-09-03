@@ -1,0 +1,6 @@
+﻿  annotation.cpp
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 361 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  annotation_vs2017.vcxproj -> C:\Users\Thanh\Desktop\Dam\examples\simple_demo\annotation\../bin\annotation_rel_x64_vs2017.exe

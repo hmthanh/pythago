@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['sampleencodingformat',['SampleEncodingFormat',['../classfoxit_1_1pdf_1_1annots_1_1_sound.html#ab6eb44a8980d81e3423fd1993f5c5d09',1,'foxit::pdf::annots::Sound']]],
+  ['saveflags',['SaveFlags',['../classfoxit_1_1pdf_1_1_p_d_f_doc.html#aa90e73ef43d9c39001b2309001862aa3',1,'foxit::pdf::PDFDoc']]],
+  ['scaletype',['ScaleType',['../classfoxit_1_1addon_1_1conversion_1_1_excel2_p_d_f_setting_data.html#a2b0038a24ab61db86e7d3a2ebb2987d3',1,'foxit::addon::conversion::Excel2PDFSettingData']]],
+  ['scalewaytype',['ScaleWayType',['../classfoxit_1_1pdf_1_1annots_1_1_icon_fit.html#aa0141754fdd98302fc7c7c3159dd10c7',1,'foxit::pdf::annots::IconFit']]],
+  ['searchflags',['SearchFlags',['../classfoxit_1_1pdf_1_1_text_search.html#aa9a0f6f6c030ac96834643f2d7deba59',1,'foxit::pdf::TextSearch']]],
+  ['sendrequestresult',['SendRequestResult',['../classfoxit_1_1pdf_1_1_time_stamp_server.html#ad2c7f5273e067c0be349265d402b8a77',1,'foxit::pdf::TimeStampServer']]],
+  ['signaturetype',['SignatureType',['../classfoxit_1_1pdf_1_1_signature.html#ab95b7646eabeefd482c22b49f835ecc0',1,'foxit::pdf::Signature']]],
+  ['size',['Size',['../classfoxit_1_1pdf_1_1_p_d_f_page.html#a09cf9da48816010eda01d7c189126be3',1,'foxit::pdf::PDFPage']]],
+  ['standardid',['StandardID',['../classfoxit_1_1common_1_1_font.html#a2700bb8b8e79e835d2c99e93f1373395',1,'foxit::common::Font']]],
+  ['state',['State',['../classfoxit_1_1common_1_1_progressive.html#afee4895f6ed72957cab5dee587df5ebc',1,'foxit::common::Progressive::State()'],['../classfoxit_1_1pdf_1_1annots_1_1_markup.html#abca4fae80dc44e4b4d7c75ab11c5cc0b',1,'foxit::pdf::annots::Markup::State()']]],
+  ['statemodel',['StateModel',['../classfoxit_1_1pdf_1_1annots_1_1_markup.html#acff935ed8da1b242b714c5d11658c679',1,'foxit::pdf::annots::Markup']]],
+  ['states',['States',['../classfoxit_1_1pdf_1_1_signature.html#aaf7e8051d392b70ed16e5c3f8d938513',1,'foxit::pdf::Signature']]],
+  ['stretchmode',['StretchMode',['../classfoxit_1_1addon_1_1optimization_1_1_image_settings.html#a60292ed96d3e1558d2688a78946f9550',1,'foxit::addon::optimization::ImageSettings::StretchMode()'],['../classfoxit_1_1addon_1_1optimization_1_1_mono_image_settings.html#a5734c531e0a9c4e8a587d4e0438529ed',1,'foxit::addon::optimization::MonoImageSettings::StretchMode()']]],
+  ['stringid',['StringID',['../classfoxit_1_1addon_1_1xfa_1_1_app_provider_callback.html#a2c0ad373b1b91af136b34a8ef2726dfe',1,'foxit::addon::xfa::AppProviderCallback']]],
+  ['style',['Style',['../classfoxit_1_1pdf_1_1annots_1_1_border_info.html#a6f0e6667ba4e9e5a757d46b1896c171a',1,'foxit::pdf::annots::BorderInfo::Style()'],['../classfoxit_1_1pdf_1_1_bookmark.html#af4433abab9cb4a24dd804155f6904b31',1,'foxit::pdf::Bookmark::Style()'],['../classfoxit_1_1pdf_1_1_page_labels.html#a52f26b0c68034c03c641f515cd854fb6',1,'foxit::pdf::PageLabels::Style()']]],
+  ['styles',['Styles',['../classfoxit_1_1common_1_1_font.html#a54ed72a37c75d1b5d5208b446e146a04',1,'foxit::common::Font']]],
+  ['submitformat',['SubmitFormat',['../classfoxit_1_1addon_1_1xfa_1_1_doc_provider_callback.html#a55d9022e22bb280b9d55cc22ad2dda3b',1,'foxit::addon::xfa::DocProviderCallback']]]
+];

@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['ocsp_5farray',['ocsp_array',['../classfoxit_1_1pdf_1_1_revocation_array_info.html#a5f998169f4edd07653af35f34aa44c33',1,'foxit::pdf::RevocationArrayInfo']]],
+  ['offset_5fx',['offset_x',['../classfoxit_1_1pdf_1_1_watermark_settings.html#a252de8d1347962f045ed645b0b0382db',1,'foxit::pdf::WatermarkSettings']]],
+  ['offset_5fy',['offset_y',['../classfoxit_1_1pdf_1_1_watermark_settings.html#a15744f94e2f7996e81fa56c101ba891a',1,'foxit::pdf::WatermarkSettings']]],
+  ['onalloc',['OnAlloc',['../struct_f_x_m_e_m___debugger.html#afc41f663751239e9334edc63e01cb1ec',1,'FXMEM_Debugger']]],
+  ['onallocdebug',['OnAllocDebug',['../struct_f_x_m_e_m___debugger.html#aa15d4a750413736a370918386794c9b1',1,'FXMEM_Debugger']]],
+  ['onfree',['OnFree',['../struct_f_x_m_e_m___debugger.html#a7e35eb9e1369100c68c7dfc7c40d4580',1,'FXMEM_Debugger']]],
+  ['onrealloc',['OnRealloc',['../struct_f_x_m_e_m___debugger.html#a67dacb7aa0877a19fa94dcf5bc6fee65',1,'FXMEM_Debugger']]],
+  ['onreallocdebug',['OnReallocDebug',['../struct_f_x_m_e_m___debugger.html#a9411a76ae3e5aaf816c3d6f6c8ab6fd9',1,'FXMEM_Debugger']]],
+  ['ontag',['OnTag',['../struct_f_x_m_e_m___debugger.html#a63dd7018a8fb3011623697ebf0f73ffd',1,'FXMEM_Debugger']]],
+  ['opacity',['opacity',['../classfoxit_1_1pdf_1_1_watermark_settings.html#a6611887136d0bceb05137692625734f1',1,'foxit::pdf::WatermarkSettings']]],
+  ['optimize_5foption',['optimize_option',['../classfoxit_1_1addon_1_1conversion_1_1_word2_p_d_f_setting_data.html#a370bf055c1f1fcb2255a9759c08ffbed',1,'foxit::addon::conversion::Word2PDFSettingData']]],
+  ['option_5flabel',['option_label',['../classfoxit_1_1addon_1_1xfa_1_1_widget_choice_option.html#a7fd1b9505457eb14bcc061367c7787c8',1,'foxit::addon::xfa::WidgetChoiceOption::option_label()'],['../classfoxit_1_1pdf_1_1interform_1_1_choice_option.html#a64cff9e3dc020fce3d782aba0340389b',1,'foxit::pdf::interform::ChoiceOption::option_label()']]],
+  ['option_5fvalue',['option_value',['../classfoxit_1_1pdf_1_1interform_1_1_choice_option.html#a521509d1cbc9d548295ebfada0545c9a',1,'foxit::pdf::interform::ChoiceOption']]],
+  ['origin_5fposition',['origin_position',['../classfoxit_1_1pdf_1_1graphics_1_1_text_state.html#a39bd9954c33522f0e5ff6404e82b2590',1,'foxit::pdf::graphics::TextState']]],
+  ['origin_5fx',['origin_x',['../classfoxit_1_1pdf_1_1_text_page_char_info.html#a0e361afeca22c07b7e28697ebe68d153',1,'foxit::pdf::TextPageCharInfo']]],
+  ['origin_5fy',['origin_y',['../classfoxit_1_1pdf_1_1_text_page_char_info.html#a5c847e5ab2ca93b0b66a9d3e0a0a8e50',1,'foxit::pdf::TextPageCharInfo']]]
+];

@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B6D3CC63-C248-4963-B77E-4B465A716FF8}</ProjectGuid>
+    <RootNamespace>PDFReader</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+    <ProjectName>PDFReader_VS2017</ProjectName>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>../bin/dbg_x86_vc2017\</OutDir>
+    <IntDir>../obj/dbg_x86_vc2017\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>../bin/dbg_x64_vc2017\</OutDir>
+    <IntDir>../obj/dbg_x64_vc2017\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>../bin/rel_x86_vc2017\</OutDir>
+    <IntDir>../obj/rel_x86_vc2017\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>../bin/rel_x64_vc2017\</OutDir>
+    <IntDir>../obj/rel_x64_vc2017\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(projectDir)../../;$(projectDir)../../../../include/</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <RegisterOutput>false</RegisterOutput>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(projectDir)../../../../lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>fsdk_win32.lib;gdiplus.lib;</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>$(IntDir)PDFReader.tlb</TypeLibraryName>
+      <HeaderFileName>PDFReader_h.h</HeaderFileName>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Manifest />
+    <PostBuildEvent>
+      <Command>if exist "..\..\..\..\lib\fsdk_win32.dll" (xcopy /Y  "..\..\..\..\lib\fsdk_win32.dll" "..\bin\dbg_x86_vc2017\") else echo lib not exit,copy lib fail</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(projectDir)../../;$(projectDir)../../../../include/</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <RegisterOutput>false</RegisterOutput>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <PerUserRedirection>false</PerUserRedirection>
+      <AdditionalLibraryDirectories>$(projectDir)../../../../lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>fsdk_win64.lib;gdiplus.lib;</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>$(IntDir)PDFReader.tlb</TypeLibraryName>
+      <HeaderFileName>PDFReader_h.h</HeaderFileName>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>if exist "..\..\..\..\lib\fsdk_win64.dll" (xcopy /Y  "..\..\..\..\lib\fsdk_win64.dll" "..\bin\dbg_x64_vc2017\") else echo lib not exit,copy lib fail</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(projectDir)../../;$(projectDir)../../../../include/</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <RegisterOutput>false</RegisterOutput>
+      <AdditionalDependencies>fsdk_win32.lib;gdiplus.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(projectDir)../../../../lib</AdditionalLibraryDirectories>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>$(IntDir)PDFReader.tlb</TypeLibraryName>
+      <HeaderFileName>PDFReader_h.h</HeaderFileName>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>if exist "..\..\..\..\lib\fsdk_win32.dll" (xcopy /Y  "..\..\..\..\lib\fsdk_win32.dll" "..\bin\rel_x86_vc2017\") else echo lib not exit,copy lib fail</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(projectDir)../../;$(projectDir)../../../../include/</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <RegisterOutput>false</RegisterOutput>
+      <PerUserRedirection>false</PerUserRedirection>
+      <AdditionalLibraryDirectories>$(projectDir)../../../../lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>fsdk_win64.lib;gdiplus.lib;</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TypeLibraryName>$(IntDir)PDFReader.tlb</TypeLibraryName>
+      <HeaderFileName>PDFReader_h.h</HeaderFileName>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>if exist "..\..\..\..\lib\fsdk_win64.dll" (xcopy /Y  "..\..\..\..\lib\fsdk_win64.dll" "..\bin\rel_x64_vc2017\") else echo lib not exit,copy lib fail</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="..\Resource\cursor\catch.cur" />
+    <None Include="..\Resource\cursor\hand.cur" />
+    <None Include="..\Resource\cursor\point.cur" />
+    <None Include="..\Resource\cursor\Select.cur" />
+    <None Include="..\Resource\cursor\snapshot.cur" />
+    <None Include="..\Resource\delete.bmp" />
+    <None Include="..\Resource\delete_gray.bmp" />
+    <None Include="..\Resource\exit.bmp" />
+    <None Include="..\Resource\exit_gray.bmp" />
+    <None Include="..\Resource\gotobar.bmp" />
+    <None Include="..\Resource\open.bmp" />
+    <None Include="..\Resource\open_gray.bmp" />
+    <None Include="..\Resource\outline.bmp" />
+    <None Include="..\Resource\outline_sel.bmp" />
+    <None Include="..\Resource\PDFReader.ico" />
+    <None Include="..\Resource\PDFReader.rc2" />
+    <None Include="..\Resource\PDFReaderDoc.ico" />
+    <None Include="..\Resource\sdk.bmp" />
+    <None Include="..\Resource\sdk_gray.bmp" />
+    <None Include="..\Resource\Toolbar.bmp" />
+    <None Include="..\Resource\toolbar1.bmp" />
+    <None Include="..\Resource\Toolbar256 .bmp" />
+    <None Include="..\Resource\Toolbar256.bmp" />
+    <None Include="..\Resource\tool_hot_bookmark.bmp" />
+    <None Include="..\Resource\tool_hot_bookmark.ico" />
+    <None Include="..\Resource\tool_hot_Layer.bmp" />
+    <None Include="..\Resource\tool_hot_layer.ico" />
+    <None Include="..\Resource\UserImages.bmp" />
+    <None Include="..\Resource\zoombar.bmp" />
+    <None Include="..\source\util.inc" />
+    <None Include="cursor\catch.cur" />
+    <None Include="cursor\hand.cur" />
+    <None Include="cursor\point.cur" />
+    <None Include="cursor\Select.cur" />
+    <None Include="cursor\snapshot.cur" />
+    <None Include="outline.bmp" />
+    <None Include="outline_sel.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\DockablePane\OutlineDockablePane.cpp" />
+    <ClCompile Include="..\Framework\ReaderPage.cpp" />
+    <ClCompile Include="..\Reader\DocPropertyDlg.cpp" />
+    <ClCompile Include="..\Reader\Find.cpp" />
+    <ClCompile Include="..\Reader\FreetextGenerateDlg.cpp" />
+    <ClCompile Include="..\Reader\AnnotPropertyDlg.cpp" />
+    <ClCompile Include="..\Reader\FreetextAppearanceDlg.cpp" />
+    <ClCompile Include="..\Reader\MainFrm.cpp" />
+    <ClCompile Include="..\Reader\AnnotAppearanceDlg.cpp" />
+    <ClCompile Include="..\Reader\PageGotoButton.cpp" />
+    <ClCompile Include="..\Reader\PasswordDlg.cpp" />
+    <ClCompile Include="..\Reader\PDFReader.cpp" />
+    <ClCompile Include="..\Reader\PDFReaderDoc.cpp" />
+    <ClCompile Include="..\Reader\PDFReaderView.cpp" />
+    <ClCompile Include="..\Reader\PDFReader_i.c" />
+    <ClCompile Include="..\Reader\SliderButton.cpp" />
+    <ClCompile Include="..\Reader\StartInterfaceDlg.cpp" />
+    <ClCompile Include="..\source\stdafx.cpp" />
+    <ClCompile Include="..\source\util.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\DockablePane\OutlineDockablePane.h" />
+    <ClInclude Include="..\Framework\ReaderPage.h" />
+    <ClInclude Include="..\Reader\DocPropertyDlg.h" />
+    <ClInclude Include="..\Reader\FindDlg.h" />
+    <ClInclude Include="..\Reader\FreetextGenerateDlg.h" />
+    <ClInclude Include="..\Reader\AnnotPropertyDlg.h" />
+    <ClInclude Include="..\Reader\FreetextAppearanceDlg.h" />
+    <ClInclude Include="..\Reader\MainFrm.h" />
+    <ClInclude Include="..\Reader\AnnotAppearanceDlg.h" />
+    <ClInclude Include="..\Reader\PageGotoButton.h" />
+    <ClInclude Include="..\Reader\PasswordDlg.h" />
+    <ClInclude Include="..\Reader\PDFReader.h" />
+    <ClInclude Include="..\Reader\PDFReaderDoc.h" />
+    <ClInclude Include="..\Reader\PDFReaderView.h" />
+    <ClInclude Include="..\Reader\PDFReader_h.h" />
+    <ClInclude Include="..\Reader\SliderButton.h" />
+    <ClInclude Include="..\Reader\StartInterfaceDlg.h" />
+    <ClInclude Include="..\Resource\resource.h" />
+    <ClInclude Include="..\source\stdafx.h" />
+    <ClInclude Include="..\source\util.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\Resource\PDFReader.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="\rdkcommon\sdk\examples\view_demo\PDFReader\Resource\PDFReader.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

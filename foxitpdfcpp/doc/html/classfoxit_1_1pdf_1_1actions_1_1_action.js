@@ -1,0 +1,45 @@
+var classfoxit_1_1pdf_1_1actions_1_1_action =
+[
+    [ "NewWindowFlag", "classfoxit_1_1pdf_1_1actions_1_1_action.html#aae495d89c8364103817c72859f9d3963", [
+      [ "e_NewWindowFlagFalse", "classfoxit_1_1pdf_1_1actions_1_1_action.html#aae495d89c8364103817c72859f9d3963ab2eeb0ea2e9efe1d1226e898eeb8c3ad", null ],
+      [ "e_NewWindowFlagTrue", "classfoxit_1_1pdf_1_1actions_1_1_action.html#aae495d89c8364103817c72859f9d3963ac8ccc35ad4c8e3abc3be51a5878337c0", null ],
+      [ "e_NewWindowFlagNone", "classfoxit_1_1pdf_1_1actions_1_1_action.html#aae495d89c8364103817c72859f9d3963a3d9582c6bcca43fac217f206a49c82b8", null ]
+    ] ],
+    [ "Type", "classfoxit_1_1pdf_1_1actions_1_1_action.html#a9fa3f999c3fbc718fbce23b3bcb5e657", [
+      [ "e_TypeUnknown", "classfoxit_1_1pdf_1_1actions_1_1_action.html#a9fa3f999c3fbc718fbce23b3bcb5e657aeeba40490fa0a85c4bf66879d8f65298", null ],
+      [ "e_TypeGoto", "classfoxit_1_1pdf_1_1actions_1_1_action.html#a9fa3f999c3fbc718fbce23b3bcb5e657abed158f9d6455442f97159e19f6acc53", null ],
+      [ "e_TypeGoToR", "classfoxit_1_1pdf_1_1actions_1_1_action.html#a9fa3f999c3fbc718fbce23b3bcb5e657a832d33e0e51be7feab7d31a30aeff7ac", null ],
+      [ "e_TypeGoToE", "classfoxit_1_1pdf_1_1actions_1_1_action.html#a9fa3f999c3fbc718fbce23b3bcb5e657a6f21982472c8e3559ec4d3343e78a4aa", null ],
+      [ "e_TypeLaunch", "classfoxit_1_1pdf_1_1actions_1_1_action.html#a9fa3f999c3fbc718fbce23b3bcb5e657ac3e6e1c6596fcfbbcdc7200e311e0364", null ],
+      [ "e_TypeThread", "classfoxit_1_1pdf_1_1actions_1_1_action.html#a9fa3f999c3fbc718fbce23b3bcb5e657a89ff9138419412ae578bcf87f167f5c6", null ],
+      [ "e_TypeURI", "classfoxit_1_1pdf_1_1actions_1_1_action.html#a9fa3f999c3fbc718fbce23b3bcb5e657a48e2bf7f0c52c57f83fbd8af2d727301", null ],
+      [ "e_TypeSound", "classfoxit_1_1pdf_1_1actions_1_1_action.html#a9fa3f999c3fbc718fbce23b3bcb5e657add15139058f769e975ae8bac13bad87e", null ],
+      [ "e_TypeMovie", "classfoxit_1_1pdf_1_1actions_1_1_action.html#a9fa3f999c3fbc718fbce23b3bcb5e657a53876500aabee0b46d347a00bc0e5313", null ],
+      [ "e_TypeHide", "classfoxit_1_1pdf_1_1actions_1_1_action.html#a9fa3f999c3fbc718fbce23b3bcb5e657aa026bca82b5b757cd05c0eebef7e6734", null ],
+      [ "e_TypeNamed", "classfoxit_1_1pdf_1_1actions_1_1_action.html#a9fa3f999c3fbc718fbce23b3bcb5e657a29d26dead1e85758122da58a76c407f9", null ],
+      [ "e_TypeSubmitForm", "classfoxit_1_1pdf_1_1actions_1_1_action.html#a9fa3f999c3fbc718fbce23b3bcb5e657a2ce69d15639f45585db1116e297c3a98", null ],
+      [ "e_TypeResetForm", "classfoxit_1_1pdf_1_1actions_1_1_action.html#a9fa3f999c3fbc718fbce23b3bcb5e657a7c34e5ee788ad65592aa6eb4e4fa9886", null ],
+      [ "e_TypeImportData", "classfoxit_1_1pdf_1_1actions_1_1_action.html#a9fa3f999c3fbc718fbce23b3bcb5e657a63be9e80a1876ca754aca848e47da17c", null ],
+      [ "e_TypeJavaScript", "classfoxit_1_1pdf_1_1actions_1_1_action.html#a9fa3f999c3fbc718fbce23b3bcb5e657ab19281daac11a0262f6631239ab726d0", null ],
+      [ "e_TypeSetOCGState", "classfoxit_1_1pdf_1_1actions_1_1_action.html#a9fa3f999c3fbc718fbce23b3bcb5e657a159288468e66f3210d7654f520906b17", null ],
+      [ "e_TypeRendition", "classfoxit_1_1pdf_1_1actions_1_1_action.html#a9fa3f999c3fbc718fbce23b3bcb5e657a85e60f199026ded44023b6354d55b58c", null ],
+      [ "e_TypeTrans", "classfoxit_1_1pdf_1_1actions_1_1_action.html#a9fa3f999c3fbc718fbce23b3bcb5e657a20fbec914fe1e012797dfa8a35a48178", null ],
+      [ "e_TypeGoTo3DView", "classfoxit_1_1pdf_1_1actions_1_1_action.html#a9fa3f999c3fbc718fbce23b3bcb5e657ae888371e4cca73203ac581228a3ca188", null ]
+    ] ],
+    [ "Action", "classfoxit_1_1pdf_1_1actions_1_1_action.html#ab769d6e47c5a41d04c193b7a43b994f9", null ],
+    [ "Action", "classfoxit_1_1pdf_1_1actions_1_1_action.html#a6bf72286ece1a436d5b4072b770e9506", null ],
+    [ "~Action", "classfoxit_1_1pdf_1_1actions_1_1_action.html#a2deb2cc5016fd04055cce81fb59fdfdc", null ],
+    [ "GetDict", "classfoxit_1_1pdf_1_1actions_1_1_action.html#a25b311ac74167fee88dab8de280ec875", null ],
+    [ "GetDocument", "classfoxit_1_1pdf_1_1actions_1_1_action.html#a96e4bd61fd5992a470788aa11ebf2fd5", null ],
+    [ "GetSubAction", "classfoxit_1_1pdf_1_1actions_1_1_action.html#a94b828e79ef8dccc73849b0925facfb8", null ],
+    [ "GetSubActionCount", "classfoxit_1_1pdf_1_1actions_1_1_action.html#a60fee82709554c00a59e49cf9700945e", null ],
+    [ "GetType", "classfoxit_1_1pdf_1_1actions_1_1_action.html#ae17818ec33be91f2b472333547b29e22", null ],
+    [ "InsertSubAction", "classfoxit_1_1pdf_1_1actions_1_1_action.html#ae761268cbd1f908d1efabd6549b61b43", null ],
+    [ "IsEmpty", "classfoxit_1_1pdf_1_1actions_1_1_action.html#acbd685b15b709c1383ffb860ba20a001", null ],
+    [ "operator !=", "classfoxit_1_1pdf_1_1actions_1_1_action.html#a70ca059b62ccef2b0fa0cff945810029", null ],
+    [ "operator=", "classfoxit_1_1pdf_1_1actions_1_1_action.html#a111ca0a2e8f913822ccb004e7a902df8", null ],
+    [ "operator==", "classfoxit_1_1pdf_1_1actions_1_1_action.html#a42db42730add99fb3936a1d84de03b59", null ],
+    [ "RemoveAllSubActions", "classfoxit_1_1pdf_1_1actions_1_1_action.html#a956e106a8b4c8a20c1b79416d46cb510", null ],
+    [ "RemoveSubAction", "classfoxit_1_1pdf_1_1actions_1_1_action.html#a1ca359de16e6d6dfa6055de597f56490", null ],
+    [ "SetSubAction", "classfoxit_1_1pdf_1_1actions_1_1_action.html#a07d940ce273a6f4e4c130f3da7d8dee9", null ]
+];

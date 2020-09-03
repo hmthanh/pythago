@@ -1,0 +1,29 @@
+// PDFReader.idl : type library source for PDFReader.exe
+
+// This file will be processed by the MIDL compiler to produce the
+// type library (PDFReader.tlb).
+
+[ uuid(612E0A07-D77B-48AC-BAC4-1750125F7391), version(1.0) ]
+library PDFReader
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	//  Primary dispatch interface for CPDFReaderDoc
+	
+	[ uuid(E8FCC3F6-0A65-4CC6-8915-E6F00CC18399) ]
+	dispinterface IPDFReader
+	{
+		properties:
+			
+		methods:
+	};
+
+	//  Class information for CPDFReaderDoc
+	
+	[ uuid(081980BE-38AC-47F5-9B79-4CBFFC4FF97C) ]
+	coclass CPDFReaderDoc
+	{
+		[default] dispinterface IPDFReader;
+	};
+};

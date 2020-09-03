@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['mailtype',['MailType',['../classfoxit_1_1_action_callback.html#a7a5c8df46f3a0a36d70ab70172f0e69c',1,'foxit::ActionCallback']]],
+  ['measuretype',['MeasureType',['../classfoxit_1_1pdf_1_1annots_1_1_markup.html#a47bb16e8e2955d1f64eaf68552f0a982',1,'foxit::pdf::annots::Markup']]],
+  ['mediaoptiontype',['MediaOptionType',['../classfoxit_1_1pdf_1_1_rendition.html#a80d0519cad553c2879aa41c445ac3bc3',1,'foxit::pdf::Rendition']]],
+  ['mediapermission',['MediaPermission',['../classfoxit_1_1pdf_1_1_rendition.html#a9ad700f2c9d4b85e5506966149b33276',1,'foxit::pdf::Rendition']]],
+  ['mediaplayerfitstyle',['MediaPlayerFitStyle',['../classfoxit_1_1pdf_1_1_rendition.html#a5ae738462e41ea75972c385e41ed469d',1,'foxit::pdf::Rendition']]],
+  ['mediaplayertype',['MediaPlayerType',['../classfoxit_1_1pdf_1_1_rendition.html#a28e2c0cfca564a04fbc02ad2676e6333',1,'foxit::pdf::Rendition']]],
+  ['mkentry',['MKEntry',['../classfoxit_1_1pdf_1_1annots_1_1_annot.html#ab846952e45b9fb407b69a95de03649a3',1,'foxit::pdf::annots::Annot']]],
+  ['mkiconcaptionrelation',['MKIconCaptionRelation',['../classfoxit_1_1pdf_1_1annots_1_1_annot.html#ab2106c17487d67faed70bc07a375f6d2',1,'foxit::pdf::annots::Annot']]],
+  ['mode',['Mode',['../classfoxit_1_1pdf_1_1graphics_1_1_text_state.html#a1c773899e5a83295e18d65ef3c49983a',1,'foxit::pdf::graphics::TextState']]],
+  ['modifyflag',['ModifyFlag',['../classfoxit_1_1pdf_1_1_std_security_handler.html#a22223f72fa1678746a0c71c6934c7537',1,'foxit::pdf::StdSecurityHandler']]],
+  ['modulename',['ModuleName',['../namespacefoxit_1_1common.html#a055a765b3f683bf4429d66d60fbdcf1d',1,'foxit::common']]],
+  ['monitorspecifier',['MonitorSpecifier',['../classfoxit_1_1pdf_1_1_rendition.html#a39719cc61c31cc9a660e4a8fa3b0483f',1,'foxit::pdf::Rendition']]],
+  ['monoimagecompressmode',['MonoImageCompressMode',['../classfoxit_1_1addon_1_1optimization_1_1_mono_image_settings.html#ae0bda14a51ce92369182a420c3541d63',1,'foxit::addon::optimization::MonoImageSettings']]],
+  ['monoimagecompressquality',['MonoImageCompressQuality',['../classfoxit_1_1addon_1_1optimization_1_1_mono_image_settings.html#a7bbe00765eeed4fb4ba65ed49819b648',1,'foxit::addon::optimization::MonoImageSettings']]],
+  ['msgboxbuttonid',['MsgBoxButtonID',['../classfoxit_1_1addon_1_1xfa_1_1_app_provider_callback.html#a202dba4b76c465aa65e55ffdcf35a278',1,'foxit::addon::xfa::AppProviderCallback']]],
+  ['msgboxbuttontype',['MsgBoxButtonType',['../classfoxit_1_1addon_1_1xfa_1_1_app_provider_callback.html#a0eba3ed1df9e6443cc2734262475f213',1,'foxit::addon::xfa::AppProviderCallback']]],
+  ['msgboxicontype',['MsgBoxIconType',['../classfoxit_1_1addon_1_1xfa_1_1_app_provider_callback.html#a86e2ba57d04615597987954b8aafa4a2',1,'foxit::addon::xfa::AppProviderCallback']]]
+];

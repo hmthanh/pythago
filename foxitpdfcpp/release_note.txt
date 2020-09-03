@@ -1,0 +1,676 @@
+Foxit PDF SDK v7.3.0.0730
+==================================================================
+This is a hot fix release
+
+* Fixed incorrect naming for compression format type: e_ImageCompressJPEG2 to  e_ImageCompressJBIG2
+
+
+Foxit PDF SDK v7.3
+==================================================================
+This is a minor release
+
+____New Features____
+* Support Word/Excel to PDF for Conversion add-on (Windows Only)
+   Related API/Class:
+		static void foxit::addon::conversion::Convert::FromExcel ( const wchar_t * src_excel_file_path, const wchar_t * src_file_password, const wchar_t * saved_pdf_path, const Excel2PDFSettingData & setting_data )
+		static void foxit::addon::conversion::Convert::FromWord ( const wchar_t * src_word_file_path, const wchar_t * src_file_password, const wchar_t * saved_pdf_path, const Word2PDFSettingData & setting_data )
+		foxit::addon::conversion::Excel2PDFSettingData  class
+		foxit::addon::conversion::Word2PDFSettingData class
+* Support adding a layer to a PDF that does not have any layer
+	Related API/Class: 
+		bool foxit::pdf::PDFDoc::HasLayer ( ) const
+		foxit::pdf::LayerTree::LayerTree ( const PDFDoc & document )  //If there is no layer tree in the PDF document which can be verified by method PDFDoc::HasLayer, the constructed layer tree object will build layer related dictionary
+* Support to get Object by Object Index
+	Related API/Class: 
+		int foxit::pdf::GraphicsObjects::GetGraphicsObjectCount ( ) const
+		int foxit::pdf::GraphicsObjects::GetGraphicsObjectIndex ( graphics::GraphicsObject *  graphics_object ) const
+* Adds an option to render annotation for thumbnail purpose (ignore NoZoom/NoRotate flags)
+	Related API/Class
+		void foxit::common::Renderer::SetRenderAnnotsForThumbnail ( bool  is_render_annots_for_thumbnail )
+* Added Get/Set permisson APIs to signature feature
+	Related API/Class: 
+		enum foxit::pdf::Signature::DocPermission
+		enum foxit::pdf::Signature::FieldMDPAction
+		void foxit::pdf::Signature::SetDocPermission ( DocPermission permission )
+		DocPermission foxit::pdf::Signature::GetDocPermission ( )
+		FieldMDPAction foxit::pdf::Signature::GetFieldMDPAction ( )
+		CFX_WideStringArray foxit::pdf::Signature::GetFieldMDPActionFields ( )
+		void SetFieldMDPActionFields (const FieldMDPAction &action, const CFX_WideStringArray &field_array)
+
+* Support setting the color with different color space for Graphics Objects
+	Related API/Class:
+		foxit::common::ColorSpace
+		foxit::pdf::graphics::ColorState
+		Color foxit::common::Color::ConvertToCMYK ( ColorSpace::RenderingIntent intent = ColorSpace::e_RenderIntentRelColorimetric ) const
+		Color foxit::common::Color::ConvertToRGB ( ColorSpace::RenderingIntent intent = ColorSpace::e_RenderIntentRelColorimetric ) const
+* Added a new render flag: e_ColorModeMappingGray  to map a color value according to a background color and a foreground color
+	Related API/Class:
+		foxit::common::Renderer::ColorMode
+* Subset embedded fonts with a document to reduce the file size
+	Related API/Class:
+		static common::Progressive StartSubsetEmbedFont(const pdf::PDFDoc& doc, common::PauseCallback* pause);
+* New API to retrieve a layer node dictionary
+	Related API/Class:
+		objects::PDFDictionary* foxit::pdf::LayerNode::GetDict() 
+* Additional options for Optimizer Add-on 
+	Related API/Class:
+		foxit::addon::optimization::OptimizerSettings::DiscardObjectsOptions
+		foxit::addon::optimization::OptimizerSettings::DiscardUserDataOptions
+
+____Changelog____
+* New method for setting the path for Java *.so library
+* Original effect of barcode restored
+
+____Enhancement____
+OOM error report feature enhanced
+* Form loading performance enhancement
+
+____Demo____
+* PageOpen JavaScript action supported in Viewer Demo
+
+____Bug Fixed____
+* Invalid PDF/A after signing document issue fixed
+* Bezier curve control points added to exported path object data
+* Listbox font size changes correctly on zoom in/out activity* Font embedding bugs fixed
+* Fixed typo on : e_FlagChoiseMultiSelect->e_FlagChoiceMultiSelect
+*  Form object associated with layer node displays correct coordinates when rendered to page     
+* RectF.isEmpty() method always return true bug fixed
+
+
+Foxit PDF SDK v7.2
+==================================================================
+This is a minor release
+
+____New Features____
+* Support dynamically adding header and footer
+   Related API/Class:  void foxit::pdf::PDFDoc::AddHeaderFooter ( const HeaderFooter & headerfooter )
+	foxit::pdf::HeaderFooter
+* Enhancements to the optimization add-on
+	Support PDF document 'Clean Up' optimization  option
+		Remove invalid links
+		Remove invalid bookmarks
+		Use Flate to encodes streams that are not encoded
+		In streams that use LZW encoding, use Flate instead
+	Support 'Discard Objects' option for PDF document optimization 
+		Discard all form submission, import and reset actions
+		Flatten form  fields
+		Discard all JavaScript actions
+		Discard embedded page thumbnails
+		Discard embedded print settings
+		Discard bookmarks
+	Related API/Class: 
+		enumfoxit::addon::optimization::OptimizerSettings::CleanUpOptions
+		enumfoxit::addon::optimization::OptimizerSettings::DiscardObjectsOptions
+* Support loading a certificate from stream/memory when using 'StartSign' method
+	Related API/Class:
+	common::Progressive StartSign (foxit::common::file::StreamCallback *cert_file_stream, const WString &cert_password, DigestAlgorithm digest_algorithm, const char *save_path, const void *client_data=0, common::PauseCallback *pause=0)
+	common::Progressive StartSign (foxit::common::file::StreamCallback *cert_file_stream, const WString &cert_password, DigestAlgorithm digest_algorithm, const wchar_t *save_path, const void *client_data=0, common::PauseCallback *pause=0)
+	common::Progressive StartSign (foxit::common::file::StreamCallback *cert_file_stream, const foxit::WString &cert_password, foxit::pdf::Signature::DigestAlgorithm digest_algorithm, foxit::common::file::StreamCallback *stream_callback, const void *client_data=0, foxit::common::PauseCallback *pause=0)
+* Support image rotation on any angle 
+	RelatedAPI/Class: void foxit::pdf::graphics::GraphicsObject::Rotate ( int angle )
+* Support to set image to an XFA field
+	RelatedAPI/Class:
+	foxit::common::Bitmap foxit::addon::xfa::XFAWidget::GetBitmap ( )
+	virtual WString foxit::addon::xfa::AppProviderCallback::LoadString(StringID string_id)
+	virtual WStringArray foxit::addon::xfa::AppProviderCallback::ShowFileDialog(const wchar_t* string_title, const wchar_t* string_filter, bool is_openfile_dialog)
+* New methods to get/set default appearance for widget annotation
+	Related API/Class:DefaultAppearance foxit::pdf::interform::Control::GetDefaultAppearance ( ) const
+	void foxit::pdf::interform::Control::SetDefaultAppearance ( const DefaultAppearance & default_ap ) 
+* Support checking whether a rectangle object is adjacent to another in the horizontal or vertical direction
+	Related API/Class: FX_BOOL FX_IsRectAdjacent (const CFX_FloatRect &rect1, const CFX_FloatRect &rect2, FX_FLOAT alignmentTolerance, FX_FLOAT distanceTolerance, int direction)
+* Support to get a popup Annotation's parent
+	Related API/Class:  Markup foxit::pdf::annots::Popup::GetParent ( )
+* Add rendering quality flag to image compression settings class
+	Related API/Class:  
+		foxit::addon::optimization::ImageSettings Class
+		void SetQuality(int32 quality); ----> void SetQuality(ImageCompressQuality quality);
+____Demo____
+* QT view demo for Linux C++
+* New sample codes for rendering to DC
+* Enhancement to simple demo - New options for PDF file 'Reduce File Size' optimization 
+____Documentation____
+* Add List of supported  JavaScript methods to the Developer guide
+* Additional JavaScript instructions provided in developer guide
+____Bug Fixes____
+* Fixed missing color attribute when exporting redacted annotation to XFDF file
+* Enhancements to the XFDF/FDFimport functionality - Updating annotation data when an identical annotation ID is found in the document 
+* Fixed PDFPage::GetBox failure on retrieving MediaBox data if the property is inherited from parent object
+* Fixed bug on setValue method for Checkbox fields on specific files.
+* Fixed persistent access to redacted annotation on specific files.
+* Fixed missing color space on tiff images added to PDF.
+
+
+
+
+Foxit PDF SDK v7.1.0.203(.NET)
+==================================================================
+c
+
+____Bug Fixes____
+* Crash on special characters in PFX file input path string
+
+
+Foxit PDF SDK v7.1.0.1212
+==================================================================
+This is a maintenance release
+
+____Bug Fixes____
+* Fixed crash issue when processing many pages of PDF file while using 'StartImportPages' API for Windows
+
+____Others____
+* Remove ConnectedPDF Add-on
+  Related API/Class:: foxit::addon::ConnectedPDF
+
+____Demo____
+* Remove 'connectedpdf' simple demo
+
+Foxit PDF SDK v7.1
+==================================================================
+This is a minor release
+
+____New features____
+* New method to check on/off status of edges ( top, left, right, bottom) and corners for XFA form field
+  Related API/Class: foxit::addon::xfa::XFAWidget::HasEdge
+* New method to get tool tip info for XFA form field
+  Related API/Class: foxit::addon::xfa::XFAWidget::GetToolTip
+* New methods to get alignmnet and justification for XFA form field
+  Related API/Class: foxit::addon::xfa::XFAWidget::GetHAlign
+                     foxit::addon::xfa::XFAWidget::GetVAlign
+* New methods to get tab order for XFA form field
+  Related API/Class: foxit::addon::xfa::XFAPage::GetFirstWidget
+                     foxit::addon::xfa::XFAPage::GetLastWidget
+                     foxit::addon::xfa::XFAPage::GetNextWidget
+                     foxit::addon::xfa::XFAPage::GetPrevWidget
+* New methods to access sound type annotation
+  Related API/Class: foxit::pdf::annots::Sound
+
+____Enhancement____
+* Extended parameters on PDF Standards conversion  
+  Related API/Class: foxit::addon::compliance::PDFCompliance::ConvertPDFFile
+* Additional methods and constants from PDF SDK v5.x included
+  Related API/Class:
+  FSCRT_Library_SetFontMapperHandler            => foxit::common::Library::SetFontMapperCallback
+  FSPDF_TextPage_GetCharInfo                    => foxit::pdf::TextPage::GetCharInfo
+  FSCRT_PathData_AddPointsCount                 => foxit::common::Path::IncreasePointCount
+  FSCRT_BITMAPFORMAT_8BPP_GRAY (Bitmap format)  => e_DIB8bppGray
+  FSCRT_BITMAPFORMAT_32BPP_RGBA (Bitmap format) => e_DIBAbgr
+  FSPDF_TextSelection_GetPieceCharRange         => foxit::pdf::TextPage::GetCharRange
+  FSPDF_RenderContext_StartPageFormControls     => foxit::common::Renderer::RenderFormControls
+* New method to get text of a PDF page according to layout or stream order
+  Related API/Class: foxit::pdf::TextPage::GetText
+* PDF Comparison Add-on optimization
+  Related API/Class: foxit::addon::comparison 
+* New method to get the bounding box of character in the text object
+  Related API/Class: foxit::pdf::graphics::TextObject::GetCharWidthByIndex
+                     foxit::pdf::graphics::TextObject::GetCharHeightByIndex
+                     foxit::pdf::graphics::TextObject::GetCharCount
+                     foxit::pdf::graphics::TextObject::GetCharPos
+* Check whether specific module has valid license key
+  Related API/Class: foxit::common::Library::HasModuleLicenseRight
+* New methods to get/set 'measure' property for polyline/polygon annotation
+  Related API/Class: foxit::pdf::annots::Polygon::SetMeasureRatio
+                     foxit::pdf::annots::Polygon::GetMeasureRatio
+                     foxit::pdf::annots::Polygon::SetMeasureUnit
+                     foxit::pdf::annots::Polygon::GetMeasureUnit
+                     foxit::pdf::annots::Polygon::SetMeasureConversionFactor
+                     foxit::pdf::annots::Polygon::GetMeasureConversionFactor
+                     foxit::pdf::annots::PolyLine::SetMeasureRatio
+                     foxit::pdf::annots::PolyLine::GetMeasureRatio
+                     foxit::pdf::annots::PolyLine::SetMeasureUnit
+                     foxit::pdf::annots::PolyLine::GetMeasureUnit
+                     foxit::pdf::annots::PolyLine::SetMeasureConversionFactor
+                     foxit::pdf::annots::PolyLine::GetMeasureConversionFactor
+* PDF merge feature optimized
+  Related API/Class: foxit::pdf::PDFDoc::StartExtractPages
+                     foxit::pdf::PDFDoc::InsertDocument
+* Provide PAdES signature without linking openssl lib
+  Related API/Class: foxit::pdf::Signature::GetPAdESLevel
+* New method to get widget annotation dictionary for form control
+  Related API/Class: foxit::pdf::interform::Control::GetWidgetDict
+* New method to extract text under text markup annotations
+  Related API/Class: foxit::pdf::TextPage::GetTextUnderAnnot
+* New callback method to check whether standard or custom encryption method is used
+  Related API/Class: foxit::pdf::CustomSecurityCallback::UseStandardCryptoMethod
+* More Document/Annotation Javascript methods and properties supported
+  Annotation --> richContents
+  Document   --> flattenPages
+* New method to set whether to render annotations for printing or not
+  Related API/Class: foxit::common::Renderer::EnableForPrint
+____Demo____
+* Add sample code for conversion of PDF compliance in compliance simple demo
+* No additional third-party libraries necessary for PAdES Signature demo 
+* Add sample code for getting the bounding box of character in the text object for graphics_objects demo
+
+____Documentation____
+* Provide 'How to extract text content under text markup annotation' in Developer Guide
+* Update FAQ in Developer Guide
+* Provide 'How to create Cross-Platform .NET Core project that can switch DLLs based on the platform' in Developer Guide
+* Provide 'How to build a sample demo without having to run the batch script' in Developer guide
+* Provide 'How to make PDF compliant when converting PDF document' in Developer Guide
+
+____Bug Fixes____
+* Fixed an issue where annotation added using javascript is visible only if doc is saved
+* Fixed an issue where German characters were not displayed when Importing FDF files
+* Fixed incorrect content for custom stamp when importing or exporting XFDF file
+* Fixed PDF compliance issues when merging PDF documents under PDF 1.7 compliance
+* Fixed incorrect redaction range issue
+* Fixed bugs when setting dash border
+* Fixed incorrect color issue when setting fill color for polyline annotation
+* Fixed file path spacing issue on running html2pdf demo
+
+____Others____
+* Supported MAC OS version is updated to v10.15
+
+Foxit PDF SDK v7.0
+==================================================================
+This is a major release
+
+____New features____
+* Support PAdES standard signature
+  Related Class:foxit.pdf.TimeStampServerMgr
+                foxit.pdf.TimeStampServer
+  Add signature filter/subfilter:
+  (1) filter : Adobe.PPKLite             subfilter: ETSI.CAdES.detached
+* Support PDF 2.0 Long term validation of signatures(LTV)
+  Related Class:foxit::pdf::LTVVerifier
+                foxit.pdf.TimeStampServerMgr
+                foxit.pdf.TimeStampServer
+  Add signature filter/subfilter:
+  (1) filter : Adobe.PPKLite             subfilter: ETSI.RFC3161
+* PDF document Optimizer Add-on -- Image Compression
+  Related Class:foxit::addon::optimization
+* PDF document Conversion Add-on -- HTML2PDF for Windows/Mac
+  Related Class:foxit::addon::conversion
+* Aditional Document/Annotation Javascript methods and properties supported
+
+ ____New Framework support____
+ * .NET Core Support
+   The same scope of functionality already available on Windows/Mac/Linux platforms is available on .NET Core
+
+____Enhancement____
+* Support Image/Path/Annotation/Shading comparison for PDF document
+  Related Class:foxit::addon::comparison
+* Support NoZoom and NoRotate properties of annotation when rendering
+  foxit::pdf::annots::Annot::Flags:e_FlagNoZoom/e_FlagNoRotate 
+* Support to Get/Set more properties of redaction annotation
+  Related APIs:foxit::pdf::annots::Redact::SetQuadPoints
+               foxit::pdf::annots::Redact::GetQuadPoints
+               foxit::pdf::annots::Redact::GetOverlayText
+               foxit::pdf::annots::Redact::SetOverlayText
+               foxit::pdf::annots::Redact::GetOverlayTextAlignment
+               foxit::pdf::annots::Redact::SetOverlayTextAlignment
+               foxit::pdf::annots::Redact::GetDefaultAppearance
+               foxit::pdf::annots::Redact::SetDefaultAppearance
+* Support to get/set border style for widget annotation
+  Related API:foxit::pdf::annots::Annot::SetBorderInfo
+* Support to get/set appearance state for annotation
+  Related APIs:foxit::pdf::annots::Widget::GetAppearanceState
+               foxit::pdf::annots::Widget::SetAppearanceState
+* Support to get name of appearance state 'ON' for annotation
+  Related API:foxit::pdf::annots::Widget::GetAppearanceOnStateName
+* Enhancement on efficiency for verifying large files
+  Related API:foxit.pdf.Signature.StartVerify
+* Support opacity property for graphics objects
+  Related APIs:foxit::pdf::graphics::GraphicsObject::GetFillOpacity
+               foxit::pdf::graphics::GraphicsObject::SetFillOpacity
+               foxit::pdf::graphics::GraphicsObject::GetStrokeOpacity
+               foxit::pdf::graphics::GraphicsObject::SetStrokeOpacity
+* Support to flatten XFA doc by using 'StreamCallback' callback class
+  Related API:foxit::addon::xfa::XFADoc::FlattenTo(foxit::common::file::StreamCallback* stream)
+* Support to save the signed document by using 'StreamCallback' callback class
+  Related API:foxit::pdf::Signature::StartSign(..., foxit::common::file::StreamCallback* stream_callback, ...)
+* Add width/height settings when getting the display matrix in reflow page mode
+  Related API:foxit::pdf::ReflowPage::GetDisplayMatrix(..., int width, int height, ...)
+* Support to get/set quadrilaterals for redaction annotation
+  Related API:foxit::pdf::annots::Redact::GetQuadPoints
+              foxit::pdf::annots::Redact::SetQuadPoints
+* Provide flag to set security data or password to be modified during encryption process
+  Related API:foxit::pdf::StdSecurityHandler::SetAES256ModifyFlags
+
+____Demo____
+* Provide simple demo - HTML to PDF conversion
+  Command line calls are also supported, so you can batch convert HTML to PDFs
+  Basic Syntax:
+  html2pdf_xxx <-html <The url or html path>> <-o <output pdf path>> <-engine <htmltopdf engine path>>
+                       [-w <page width>] [-h <page height>] [-ml <margin left>] [-mr <margin right>] [-mt <margin top>]
+                       [-mb <margin bottom>] [-r <page rotate degree>] [-mode <page mode>] [-scale <whether scale page>]
+                       [-link <whether convert link>] [-tag <whether generate tag>] [-cookies <cookies file path>] [-timeout <timeout>]
+                       [--help<Parameter usage>]
+
+  Note:
+  <> required
+  [ ] optional
+* Provide sample demo for Long-term validation of signatures(LTV)
+* Provide sample demo for PAdES signature
+* Provide sample demo - PDF file optimization
+* Provide sample demos for .NET core
+* Enhancement of text Comparison demo
+
+____Documentation____
+* Provide a new developer guide for .NET Core
+* Provide all Chinese documentation for Developer Guide and Upgrade Warnings
+* Provide 'How to convert from HTML to PDF document using SDK API' tutorial in developer guide
+* Provide 'How to optimize PDF document using SDK API' tutorial in developer guide -- compress image
+* Provide 'How to establish Long term validation of signatures using SDK API' tutorial in developer guide
+
+____Bug Fixes____
+* Fixes overlay issue when printing PDF page
+* Fixes unknown error when using 'GetCharBBox' method
+* Fixes crash issue when flattening specific PDF documents
+* Fixes Type3 font issue
+* Fixed issue with high memory when using the view demo
+* Fixes display date issue when adding dynamic stamp
+* Fixes invalid signature issue
+
+Foxit PDF SDK v6.4
+==================================================================
+This is a minor release
+
+____New features____
+* OCR Add-on (Windows)
+  Related Class: foxit::addon::ocr
+* PDF Comparison Add-on (Text comparison)
+  Related Class: foxit::addon::Comparison
+* PDF Compliance Add-on (PDF/A conversion and validation)
+  Related Class:foxit::addon::compliance
+
+____Enhancement____
+* Provide rotation property for annotation(FreeText/Stamp/Screen)
+  Related APIs:
+  foxit::pdf::annots::FreeText::GetRotation
+  foxit::pdf::annots::FreeText::Rotate
+  foxit::pdf::annots::FreeText::SetRotation
+  foxit::pdf::annots::Stamp::GetRotation
+  foxit::pdf::annots::Stamp::Rotate
+  foxit::pdf::annots::Stamp::SetRotation
+* Support for annotation flattening
+  Related API:foxit::pdf::PDFPage::FlattenAnnot
+* Support to get the signature object on existing XFA signature field of XFA document
+  Related API:foxit::addon::xfa::XFAWidget::GetSignature
+* Support to apply single redaction annotation
+  Related API:foxit::pdf::annots::Redact::Apply
+* Support for getting graphics object(s) at a point on the device coordinates system
+  Related APIs:
+  foxit::pdf::PDFPage::GetGraphicsObjectAtDevicePoint
+  foxit::pdf::PDFPage::GetGraphicsObjectsAtDevicePoint
+* Support for getting more properties of the XFA field
+  Related APIs:
+  foxit::addon::xfa::XFAWidget::GetName
+  foxit::addon::xfa::XFAWidget::GetOptions
+  foxit::addon::xfa::XFAWidget::IsChecked
+* Support for exporting file data represented in the current file specification to a file stream
+  Related API:foxit::pdf::FileSpec::ExportToFileStream
+* Provide rendering graphics objects separately
+  Related API:
+  foxit::common::Renderer::RenderGraphicsObject
+* Provide option of removing redundant PDF objects when saving PDF file
+  Related API:foxit::pdf::PDFDoc::SaveAs
+* Enhancement of getting the display matrix for annotation
+  Added API: foxit::pdf::annots::Annot::GetDisplayMatrix
+  Deprecated API: foxit::common::Renderer::SetTransformAnnotIcon
+  Modified API: foxit::pdf::annots::Annot::GetDeviceRect --> The parameter of "is_transform_icon" was removed.
+* Support getting the 'Locked' property of layer node
+  Related API: foxit::pdf::LayerNode::IsLocked
+
+____Demo____
+* Added a new sample project to simple_demo - OCR demo for Windows
+* Added a new sample project to simple_demo - Text Comparison demo
+* Added a new sample project to simple_demo - PDF/A demo
+
+____Documentation____
+* Create 'How to perform OCR using SDK API' for Developer Guide
+* Create 'How to compare PDF files using SDK API' for Developer Guide
+* Create 'How to convert and verify PDF/A document using SDK API' for Developer Guide
+* Create 'How to fix 'xcopy' exited with code 9009' Error on Developer Guide
+* Create 'How to save document into memory by WriterCallback' for Developer Guide
+
+____Bug Fixes____
+* Rendering signed file pages slowly when using 'LoadSignature' is fixed
+* Fixed crash issue on getting the signature content for the specified PDF file
+
+Foxit PDF SDK v6.3
+==================================================================
+This is a minor release
+
+____New features____
+* Added SignatureInfo and Doc/WillClose functions to Foxit PDF SDK JavaScript API
+
+____Demo____
+* Added a new sample project to simple_demo - XFA demo
+* Added a new sample project to simple_demo - FullText search demo
+
+____Documentation____
+* Extended Developer guide tutorials for 'Working with SDK API' Section
+* Some glitches were fixed and detailed descriptions were added to core classes/methods in API Reference
+* Added introduction on how to implement XFA Form filing and other functionality to Developer Guide
+* Added 'Working with JavaScript' scripts section to Developer Guide
+
+____Bug Fixes____
+* Fixed file size increment after signing for specific types of PDF files
+* Fixed invalid signature issue when rendering PDF files with valid signature
+* Invalid Keystroke functionality when using event.change and event.value issue fixed
+
+Foxit PDF SDK v6.2.1
+==================================================================
+This is a maintenance release
+
+____Enhancement____
+* New xfawidget callback functions to create and destroy message notifications
+
+____Demo____
+* .NET UI demo - PDFReader .NET demo supports Acroform field filling  
+* PDFWrapper demo - Provides comprehensive tutorial on how to use "WriterCallback" callback class
+
+____Bug Fixes____
+* Fixed RMS-Encrypted files loading issue when PDF attachments are opened
+* Specific printing mode crash was fixed 
+* XFA form field reset functionality was fixed 
+
+____Documentation____
+* Some glitches were fixed and detailed descriptions were added to core classes/methods in API Reference
+
+Foxit PDF SDK v6.2
+==================================================================
+This is a minor release
+
+____New features____
+* Objective-C API for Mac
+* RMS V2 Support
+* Support PDF 2.0 compliant loading process through wrapper PDF
+Related API functions: foxit::pdf::PDFDoc::GetWrapperType
+                       foxit::pdf::PDFDoc::GetPayLoadData
+                       foxit::pdf::PDFDoc::StartGetPayloadFile
+
+____Demo____
+* Provide new simple demos for Objective-C
+Nearly 30 new demos added, including pdf2txt, outline, annotation, render, signature, etc.
+*New simple demo - matrix transform for Java/dotnet
+
+____Enhancement____
+* Support more form field types (CheckBox, PushButton, RadioButton, ListBox) in "FillerAssistCallback"
+Related API functions: foxit::pdf::interform::FillerAssistCallback::FocusGotOnControl
+                       foxit::pdf::interform::FillerAssistCallback::FocusLostFromControl
+* Support Rendering page to DC for .Net 
+Related API function: foxit::common::Renderer::Renderer
+
+____Bug Fixes____
+* Fix a crash issue when using importFDF function
+
+____Others____
+* Add "PDFNumberTree" class to support number tree property
+Added Class:        foxit::pdf::objects::PDFNumberTree
+Added API function: foxit::pdf::PageLabels::GetNumberTree
+*The return value of the XFA ExportData() function is adapted to 'bool' type
+Related API function: foxit::addon::xfa::XFADoc::ExportData
+* Support rectangle selection to retrieve text area  
+Related API function:foxit::pdf::TextPage::GetTextRectArrayByRect
+* Add function to detect if XFA form widget is being displayed
+Related API function: foxit::addon::xfa::XFAWidget::GetPresence
+
+Foxit PDF SDK v6.1.1
+____New features____
+* Support multimedia content through screen annotations.
+Related Class: foxit::pdf::Rendition
+               foxit::pdf::MediaPlayer
+               foxit::pdf::annots::Screen
+*Support moving a layer node from one parent to another and reorder the layers
+Related API function:  foxit::pdf::LayerNode::MoveTo
+* API function to check whether a PDF is a taggedPDF
+ foxit::pdf::PDFDoc::IsTaggedPDF
+____Enhancement____
+*Return  extended signature state information when signature is verified and valid.
+enum foxit::pdf::Signature::States e_StateVerifyNoChange
+*Enhancement signature handler, the signature callback IsNeedPadData() was added so that the users can decide whether to return the signature content with Pad Data.
+Related API:
+virtual bool foxit::pdf::SignatureCallback::IsNeedPadData()
+*Layer Demo updated with new functionality
+*More consistent .NET assemblies naming standard
+*XFA feature enhanced
+
+____Demo____
+* Added a new simple demo - matrix demo 
+
+____Bug Fixes____
+*Fix a crash issue on TIFF file conversion to other formats
+For C++, import foxit::common::file::StreamCallback and change the parameter in the SaveAs function from
+"bool Image::SaveAs(file::WriterCallback* file, const wchar_t* file_extension) EXCE_SPEC" 
+to
+"bool Image::SaveAs(file::StreamCallback* file, const wchar_t* file_extension) EXCE_SPEC".
+
+For java, import com.foxit.sdk.common.fxcrt.StreamCallback and change the parameter in the SaveAs function  of com.foxit.sdk.common.Image from
+"public boolean saveAs(WriteCallback file, String file_extension)" 
+to
+"public boolean saveAs(StreamCallback file, String file_extension)"
+
+For dotnet, Add foxit.common.fxcrt.StreamCallback and change the parameter in the SaveAs function of foxit.common.Image from
+"public bool SaveAs(WriteCallback file, string file_extension)" 
+to
+"public bool SaveAs(StreamCallback file, string file_extension)"
+
+*Fixed getValues("CreationDate") and getValues("ModDate") functions to return correct values for specific  files
+*Fixed an issue with GetSignatureDic function returning empty value for  specific PDF files
+
+*Fix a crash issue on .net viewer Demo when using key without XFA Module
+____Others____
+* Change pdf::WatermarkSetting::Position to common::Position
+For C++, the following enum definition was changed:
+enum foxit::pdf::WatermarkSetting::Position --> foxit::common::Position
+
+For java, the following definitions must be moved from com.foxit.sdk.pdf.WatermarkSettings to com.foxit.sdk.common.Constants
+static final int 	e_PosTopLeft = 0
+static final int 	e_PosTopCenter = 1
+static final int 	e_PosTopRight = 2
+static final int 	e_PosCenterLeft = 3
+static final int 	e_PosCenter = 4
+static final int 	e_PosCenterRight = 5
+static final int 	e_PosBottomLeft = 6
+static final int 	e_PosBottomCenter = 7
+static final int 	e_PosBottomRight = 8
+
+For dotnet, the following enum definition was changed:
+foxit.pdf.WatermarkSettings.Position --> foxit.common.Position
+
+*The return type for some .NET API functions were changed
+string foxit.pdf.objects.PDFObject.GetString --> byte[] foxit.pdf.objects.PDFObject.GetString
+string foxit.pdf.SignatureCallback.GetDigest --> byte[] foxit.pdf.SignatureCallback.GetDigest
+string foxit.pdf.SignatureCallback.Sign --> byte[] foxit.pdf.SignatureCallback.Sign
+
+Foxit PDF SDK v6.1
+==================================================================
+This is a minor release
+
+____New features____
+* Make a font as an embedded font
+Related API:  Font foxit::common::Font::Embed
+* Added API function to delete an Associated file
+Related API: void foxit::pdf::AssociatedFiles::RemoveAssociatedFile
+* Provide default Signature handler
+There is no new API specific function for this, but the current default security handler was improved. Currently, GSDK supports two types of signature filter/subfilter:
+(1) filter : Adobe.PPKLite             subfilter: adbe.pkcs7.detached
+(2) filter : Adobe.PPKLite             subfilter: adbe.pkcs7.sha1
+If you uses one of them in their signature, they don't need to register a security validation code, the signature validation is in-built by default and will work automatically.
+
+Essentially, this makes it very easy for users with less IT know-how to securely sign documents without having to develop a customized signature validation code. 
+
+____Demo____
+* Added a new simple demo - Redact demo 
+* Added a new simple demo - Bacrode demo 
+* Attachment demo add save attachment as a file sample.
+* Added vs2017, vs2015 project file to .net Demo,added vs2017 project file to C++ Demo
+* More features were added to .NET Viewer Demo
+* Fixed some memory leak issues in  annotation, security simple Demo
+
+____Enhancement/BugFixes____
+* Improvement in the API reference 
+* Enhance the rendering with some special file
+* Fix a signature verify issue (add a method called IsNeedPadData() to Signature callback)
+* Fix a bug related to form fill feature
+
+____Others____
+* Some name space changes for .NET API
+foxit.pdf.filespec ---> foxit.pdf
+foxit.pdf.watermark ---> foxit.pdf
+foxit.pdf.signature ---> foxit.pdf
+foxit.pdf.security ---> foxit.pdf
+foxit.pdf.psi ---> foxit.pdf
+foxit.pdf.layer ---> foxit.pdf
+
+Foxit PDF SDK v6.0.0.0720
+==================================================================
+This is a maintance release
+
+Fix a licensed key check issue for security related feature.
+
+Foxit PDF SDK v6.0 
+==================================================================
+
+Foxit PDF SDK v6.0 has been designed from the ground up for Foxit's customers to offer a better development experience, a more powerful feature set and a consistent API across all platforms.
+
+____High Level Improvements____
+
+* New support for XFA form fields
+* PDF v2.0 support
+* ConnectedPDF support
+* Lifecycle management for page/document objects is now handled internally
+* Consistent feature set and API across all platforms
+* Includes all Foxit PDF SDK v5.0 features
+* v6.0 has one standard package with four add-ons
+* Indexed Full-Text Search support
+____Add-Ons____
+
+The Standard package includes many standard features such as PDF rendering, editing, annotating, AcroForm form fields, etc, and for specialized features there are currently four add-ons provided:
+
+* XFA Add-on = foxit::addon::xfa 
+* Redaction Add-on = foxit::addon::Redaction 
+* ConnectedPDF Add-on: foxit::addon::ConnectedPDF 
+* RMS Add-on: foxit::pdf::RMSEncryptData, foxit::pdf::RMSSecurityCallback, foxit::pdf::RMSSecurityHandler
+
+____New Features____
+
+** Unencrypted wrapper document (PDF 2.0) **
+
+Unencrypted wrapper document is a new feature of PDF 2.0, in v6.0, Foxit PDF SDK support to save the PDF with this new feature.
+
+Related API = foxit::pdf::Doc::StartSaveAsPayloadFile
+
+** 256-bit AES encryption support (PDF 2.0) **
+
+Related API = foxit::pdf::SecurityHandler
+
+** Associated Files (PDF 2.0) **
+
+In PDF 2.0, a new concept named "Associated files" is defined. Associated files provide a means to associate content in other formats with objects of a PDF file and identify the relationship between the content and the objects. Such associated files are designated using file specification dictionaries (known as file specification). Associated files could be linked to the PDF document's catalog, a page dictionary, graphics objects, structure elements, XObject, DParts, an annotation dictionary and so on. Specially, associated files with graphics objects means to be associated with the marked content item.
+
+Class AssociatedFiles is the class for managing associate files. It offers the functions to count/get associate files in PDF dictionary or graphics object, to associate files (represented by FileSpec) with catalog, PDF pages, graphics objects, form XObject objects, annotation objects and so on.
+
+Related API = foxit::pdf::AssociatedFiles cass
+
+** XFA Add-On **
+
+XFA forms are XML-based forms, wrapped inside a PDF.  It can be also used in PDF files starting with PDF 1.5 specification. XFA specification is referenced as an external specification indispensable for the application of ISO 32000-1 specification (PDF 1.7). XML Forms Architecture was not standardized as an ISO standard. XFA defines static forms (since XFA 2.0 and before) and dynamic forms (since XFA 2.1 or 2.2). In this version Foxit PDF SDK supports the filling of both static and dynamic XFA forms. 
+
+Related API = foxit::addon::xfa 
+
+** ConnectedPDF Add-On **
+
+In Foxit PDF SDK 6.0 we have begun to make available some API's for adding ConnectedPDF functionality into third-party applications. Please contact sales@foxitsoftware.com if you are interested in trying the ConnectedPDF Add-On.

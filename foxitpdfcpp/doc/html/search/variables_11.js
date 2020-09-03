@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['scale_5ftype',['scale_type',['../classfoxit_1_1addon_1_1conversion_1_1_excel2_p_d_f_setting_data.html#ae6a2c883a7d58928065d5ec4e6ae5902',1,'foxit::addon::conversion::Excel2PDFSettingData']]],
+  ['scale_5fway_5ftype',['scale_way_type',['../classfoxit_1_1pdf_1_1annots_1_1_icon_fit.html#acc4391ae1158cfb1c270174e49d84c5c',1,'foxit::pdf::annots::IconFit']]],
+  ['scale_5fx',['scale_x',['../classfoxit_1_1pdf_1_1_watermark_settings.html#abc73916c9d887b5e13065fd33bee6cc1',1,'foxit::pdf::WatermarkSettings']]],
+  ['scale_5fy',['scale_y',['../classfoxit_1_1pdf_1_1_watermark_settings.html#a03214d4777b4616b6d96d75946c65427',1,'foxit::pdf::WatermarkSettings']]],
+  ['second',['second',['../classfoxit_1_1_date_time.html#a0013d1b3a762cf85a0189b47b00c805c',1,'foxit::DateTime::second()'],['../struct_f_x_c_r_t___d_a_t_e_t_i_m_e_z_o_n_e.html#ad4206adee6daef96f8260675950fed83',1,'FXCRT_DATETIMEZONE::second()'],['../classfoxit_1_1pdf_1_1annots_1_1_quad_points.html#a4e2790856463633a482960688bfed269',1,'foxit::pdf::annots::QuadPoints::second()']]],
+  ['second_5fcolor',['second_color',['../classfoxit_1_1pdf_1_1annots_1_1_shading_color.html#a43ae51d0203a63179ffd2a5cd2bbc7af',1,'foxit::pdf::annots::ShadingColor']]],
+  ['selected',['selected',['../classfoxit_1_1addon_1_1xfa_1_1_widget_choice_option.html#ab150a34d0f18d51553be198c1258a10c',1,'foxit::addon::xfa::WidgetChoiceOption::selected()'],['../classfoxit_1_1pdf_1_1interform_1_1_choice_option.html#a05dd5e638836e39a6e6f2f6db1956d85',1,'foxit::pdf::interform::ChoiceOption::selected()']]],
+  ['server_5feul_5flist',['server_eul_list',['../classfoxit_1_1pdf_1_1_r_m_s_encrypt_data.html#a509dc276db156064cb506e96af3039b4',1,'foxit::pdf::RMSEncryptData']]],
+  ['setthreadpriority',['SetThreadPriority',['../struct_f_x___t_h_r_e_a_d_h_a_n_d_l_e_r.html#aec32c2480f3e9675893bd3c34c39f787',1,'FX_THREADHANDLER']]],
+  ['severity',['severity',['../classfoxit_1_1addon_1_1compliance_1_1_hit_data.html#a1f13383a0eb6bce028b893b05d17a08a',1,'foxit::addon::compliance::HitData']]],
+  ['signature_5fvri_5fcreation_5ftime',['signature_vri_creation_time',['../classfoxit_1_1pdf_1_1_cert_verify_result.html#a7efbe14fd43dbb25fccfbfca9da134e9',1,'foxit::pdf::CertVerifyResult']]],
+  ['standard_5ffont_5fname_5farray',['standard_font_name_array',['../classfoxit_1_1pdf_1_1_embedded_font_data.html#a3d5479eeea4e7c93b5689175d6ff25b9',1,'foxit::pdf::EmbeddedFontData']]],
+  ['start',['start',['../struct_c_f_x___sort_list_array_1_1_data_list.html#aa5ade96a829aba33ed395ea782bf732d',1,'CFX_SortListArray::DataList']]],
+  ['start_5fnumber',['start_number',['../classfoxit_1_1pdf_1_1_page_number_range.html#a054d9378c2e94f134cb996c0a325c061',1,'foxit::pdf::PageNumberRange']]],
+  ['start_5fpage_5fnumber',['start_page_number',['../classfoxit_1_1pdf_1_1_header_footer.html#a62f48b35fd839d9fc4c30fbf29404446',1,'foxit::pdf::HeaderFooter']]],
+  ['start_5ftime',['start_time',['../classfoxit_1_1pdf_1_1_time_range.html#acd8c86e47b194dbf84d4e738921b0814',1,'foxit::pdf::TimeRange']]],
+  ['startangle',['startAngle',['../class_c_f_x___a_template.html#a86bd4f69f41658a1570eb82d2b93fe40',1,'CFX_ATemplate']]],
+  ['state',['state',['../classfoxit_1_1addon_1_1compliance_1_1_fixup_data.html#a5c2befb85e93e675d26fff7e750e69a6',1,'foxit::addon::compliance::FixupData']]],
+  ['style',['style',['../classfoxit_1_1pdf_1_1annots_1_1_border_info.html#a03ce021535db25c4193df424b8e4617a',1,'foxit::pdf::annots::BorderInfo']]],
+  ['sub_5ffilter',['sub_filter',['../classfoxit_1_1pdf_1_1_d_r_m_encrypt_data.html#ad68750dec80278781cc5c15ed4f267fd',1,'foxit::pdf::DRMEncryptData::sub_filter()'],['../classfoxit_1_1pdf_1_1_custom_encrypt_data.html#a38fd049129936ede8adf8d8f315cd7a5',1,'foxit::pdf::CustomEncryptData::sub_filter()']]],
+  ['subtype',['subtype',['../classfoxit_1_1pdf_1_1_layer_print_data.html#a4e151962efc066010bb2f235b07d3b71',1,'foxit::pdf::LayerPrintData']]],
+  ['sweepangle',['sweepAngle',['../class_c_f_x___a_template.html#a4789a274c0d71d8c6ce8ce9751c5f30e',1,'CFX_ATemplate']]]
+];

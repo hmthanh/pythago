@@ -1,0 +1,13 @@
+var searchData=
+[
+  ['barcode',['Barcode',['../classfoxit_1_1common_1_1_barcode.html#a0d7a8ebf120469d79661904609d86b27',1,'foxit::common::Barcode::Barcode()'],['../classfoxit_1_1common_1_1_barcode.html#a2bc6ed698c6fafbe3bd4d01303339db2',1,'foxit::common::Barcode::Barcode(const Barcode &amp;other)']]],
+  ['base64decode',['Base64Decode',['../classfoxit_1_1common_1_1_codec.html#ae4765a8615d46019b3ef0ee4071a21d0',1,'foxit::common::Codec']]],
+  ['base64encode',['Base64Encode',['../classfoxit_1_1common_1_1_codec.html#aa5dde8ce2f4eef9941c1aa9bfd68b982',1,'foxit::common::Codec']]],
+  ['beep',['Beep',['../classfoxit_1_1addon_1_1xfa_1_1_app_provider_callback.html#a5bdc54fb6addfe48e5d59c1a994100e5',1,'foxit::addon::xfa::AppProviderCallback::Beep()'],['../classfoxit_1_1_action_callback.html#a72a2de1088619425dcae1a1e809da526',1,'foxit::ActionCallback::Beep()']]],
+  ['bitmap',['Bitmap',['../classfoxit_1_1common_1_1_bitmap.html#a33417a0ab6a164cf03369a392ea959de',1,'foxit::common::Bitmap::Bitmap(int width, int height, DIBFormat format, uint8 *buffer=0, int pitch=0)'],['../classfoxit_1_1common_1_1_bitmap.html#a266d86ddbb5b57cf5a51fbbe44386c06',1,'foxit::common::Bitmap::Bitmap(const Bitmap &amp;other)'],['../classfoxit_1_1common_1_1_bitmap.html#aebe242f22c5091459cf7364a39868840',1,'foxit::common::Bitmap::Bitmap()']]],
+  ['bold',['Bold',['../classfoxit_1_1addon_1_1xfa_1_1_widget_menu.html#a948dacc95744eaa10bdde68c87e1fa82',1,'foxit::addon::xfa::WidgetMenu']]],
+  ['bookmark',['Bookmark',['../classfoxit_1_1pdf_1_1_bookmark.html#aba48acd053f5fafbdb0b54ee9ed42d06',1,'foxit::pdf::Bookmark::Bookmark(const PDFDoc &amp;pdf_doc, objects::PDFDictionary *bookmark_dict)'],['../classfoxit_1_1pdf_1_1_bookmark.html#a654cabf5dbca0ad2060d196e5caa8c4e',1,'foxit::pdf::Bookmark::Bookmark(const Bookmark &amp;other)']]],
+  ['borderinfo',['BorderInfo',['../classfoxit_1_1pdf_1_1annots_1_1_border_info.html#a4d2816c1c2cec8893807869c522928c4',1,'foxit::pdf::annots::BorderInfo::BorderInfo(float width, Style style, float intensity, float dash_phase, const FloatArray &amp;dashes)'],['../classfoxit_1_1pdf_1_1annots_1_1_border_info.html#ae212cce49e0be71294407a29601652f2',1,'foxit::pdf::annots::BorderInfo::BorderInfo()'],['../classfoxit_1_1pdf_1_1annots_1_1_border_info.html#aeb2e4e4ea2127e688f3fb3b4418e9d59',1,'foxit::pdf::annots::BorderInfo::BorderInfo(const BorderInfo &amp;border_info)']]],
+  ['browsefile',['BrowseFile',['../classfoxit_1_1_action_callback.html#a22da50856fc69c3277bfcb8f78b098f8',1,'foxit::ActionCallback']]],
+  ['bytealign',['ByteAlign',['../class_c_f_x___bit_stream.html#a562d7cda95189e7664108923231378ee',1,'CFX_BitStream::ByteAlign()'],['../class_c_f_x___bit_writer.html#a4365cf67b5be1747b09a1080d2a2c5b8',1,'CFX_BitWriter::ByteAlign()']]]
+];

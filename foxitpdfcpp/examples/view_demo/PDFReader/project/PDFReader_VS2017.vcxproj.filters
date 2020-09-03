@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Reader">
+      <UniqueIdentifier>{faddc9ad-ce3c-4014-ba7d-aede22ea2979}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Framework">
+      <UniqueIdentifier>{c325175f-d99e-4894-8573-806bf5fc25e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{204708f3-a28a-4f93-bb12-e0381ec791aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="DockablePane">
+      <UniqueIdentifier>{1298a683-9e74-4ca0-a2f1-d83270a7671d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Reader\dialog">
+      <UniqueIdentifier>{3bd3d03c-5b29-4989-a377-b91b8dd9c1b1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\source\util.inc">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\Resource\PDFReader.ico">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="..\Resource\PDFReader.rc2">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="..\Resource\PDFReaderDoc.ico">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="..\Resource\Toolbar.bmp">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="..\Resource\UserImages.bmp">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="..\Resource\tool_hot_Layer.bmp">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="..\Resource\tool_hot_bookmark.bmp">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="..\Resource\tool_hot_bookmark.ico">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="..\Resource\tool_hot_layer.ico">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="..\Resource\sdk.bmp">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="..\Resource\delete.bmp">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="..\Resource\exit.bmp">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="..\Resource\open.bmp">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="..\Resource\Toolbar256 .bmp">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="..\Resource\delete_gray.bmp">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="..\Resource\exit_gray.bmp">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="..\Resource\open_gray.bmp">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="..\Resource\sdk_gray.bmp">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="..\Resource\Toolbar256.bmp">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="cursor\snapshot.cur">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="..\Resource\cursor\snapshot.cur">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="..\Resource\toolbar1.bmp">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="outline.bmp">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="..\Resource\outline.bmp">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="outline_sel.bmp">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="..\Resource\outline_sel.bmp">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="cursor\catch.cur">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="cursor\hand.cur">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="cursor\Select.cur">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="cursor\point.cur">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="..\Resource\cursor\catch.cur">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="..\Resource\cursor\hand.cur">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="..\Resource\cursor\Select.cur">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="..\Resource\cursor\point.cur">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="..\Resource\gotobar.bmp">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="..\Resource\zoombar.bmp">
+      <Filter>Resource</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\source\stdafx.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\util.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Reader\MainFrm.cpp">
+      <Filter>Reader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Reader\PDFReader_i.c">
+      <Filter>Reader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Reader\PDFReaderDoc.cpp">
+      <Filter>Reader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Reader\PDFReaderView.cpp">
+      <Filter>Reader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Framework\ReaderPage.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\DockablePane\OutlineDockablePane.cpp">
+      <Filter>DockablePane</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Reader\StartInterfaceDlg.cpp">
+      <Filter>Reader\dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Reader\PasswordDlg.cpp">
+      <Filter>Reader\dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Reader\DocPropertyDlg.cpp">
+      <Filter>Reader\dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Reader\AnnotPropertyDlg.cpp">
+      <Filter>Reader\dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Reader\FreetextAppearanceDlg.cpp">
+      <Filter>Reader\dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Reader\AnnotAppearanceDlg.cpp">
+      <Filter>Reader\dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Reader\FreetextGenerateDlg.cpp">
+      <Filter>Reader\dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Reader\Find.cpp">
+      <Filter>Reader\dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Reader\SliderButton.cpp">
+      <Filter>Reader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Reader\PageGotoButton.cpp">
+      <Filter>Reader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Reader\PDFReader.cpp">
+      <Filter>Reader</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\source\stdafx.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\util.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Reader\MainFrm.h">
+      <Filter>Reader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Reader\PDFReader.h">
+      <Filter>Reader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Reader\PDFReader_h.h">
+      <Filter>Reader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Reader\PDFReaderDoc.h">
+      <Filter>Reader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Reader\PDFReaderView.h">
+      <Filter>Reader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Framework\ReaderPage.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Resource\resource.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\DockablePane\OutlineDockablePane.h">
+      <Filter>DockablePane</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Reader\StartInterfaceDlg.h">
+      <Filter>Reader\dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Reader\PasswordDlg.h">
+      <Filter>Reader\dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Reader\DocPropertyDlg.h">
+      <Filter>Reader\dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Reader\AnnotPropertyDlg.h">
+      <Filter>Reader\dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Reader\FreetextAppearanceDlg.h">
+      <Filter>Reader\dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Reader\AnnotAppearanceDlg.h">
+      <Filter>Reader\dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Reader\FreetextGenerateDlg.h">
+      <Filter>Reader\dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Reader\FindDlg.h">
+      <Filter>Reader\dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Reader\SliderButton.h">
+      <Filter>Reader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Reader\PageGotoButton.h">
+      <Filter>Reader</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\Resource\PDFReader.rc">
+      <Filter>Resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
